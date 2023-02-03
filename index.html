@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="assets/img/favicon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/img/favicon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/img/favicon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/img/favicon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="assets/img/favicon/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="assets/img/favicon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="assets/img/favicon/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="assets/img/favicon/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="assets/img/favicon/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="assets/img/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="assets/img/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="assets/img/favicon/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="assets/img/favicon/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+
+    <!-- Imports -->
+    <link rel="stylesheet" href="assets/css/main.min.css">
+    <script src="assets/js/jquery.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script src="assets/js/staff.js" type="text/javascript"></script>
+    <script src="assets/js/events.js" type="text/javascript"></script>
+    <script src="assets/js/subjects.js" type="text/javascript"></script>
+    <script src="assets/js/config.js" type="text/javascript"></script>
+
+    <script type="text/javascript" src="ghspa.js"></script>
+   
+    <title>IWD 2023</title>
+
+    <script>
+        (function($) {
+            if(!window.location.hash) {
+                // Redirect
+                //window.location.replace("https://www.galileo.edu/page/international-women-day-women-techmakers/");
+            }
+        })(jQuery);
+    </script>
+</head>
+<body font-family="Product">
+    <span id="background" class="background">
+    </span>
+    <span class="title-container">
+        <span class="inner-container">
+            <span id="title-container" class="title-container no-select">
+                <span class="title">
+                    <img id="innovation-logo" class="innovation-logo" src="" alt="">
+                </span>
+
+                <span class="title-menu">
+                    <a id="staff-access" class="btn-menu c3">Conferencistas</a>
+                    <a id="agenda-access" class="btn-menu c3">Agenda</a>
+                    <!-- <a id="register-access" class="btn-menu c3">Registrate</a> -->
+                    <a id="home-access" class="btn-menu c1">Más información</a>
+                    <a id="conduct-access" class="btn-menu c4">Código de Conducta</a>
+                    
+                </span>
+            </span>
+        </span>
+    </span>
+    <span id="dynamic-information" class="dynamic-information">
+        <!-- <span class="section-title">
+        </span> -->
+        <span class="section-body">
+            
+        </span>
+    </span>
+    <span id="dynamic-expanded-information" class="dynamic-expanded-information">
+        <span class="section-body">
+            
+        </span>
+    </span>
+
+
+
+    <span id="galileo-logo" class="galileo-logo">
+        
+    </span>
+    <span id="back-container" class="back-container">
+        <a id="back" class="btn-back">
+            <i class="fas fa-arrow-left"></i>
+        </a>
+    </span>
+</body>
+</html>
+
+<script>
+    var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Agu', 'Sep', 'Oct', 'Nov', 'Dec'];
+    var inIndex = true;
+    var isCarouselOn = false;
+    var inExpanded = false;
+    var orderStaff = new Array();
+
+    var WIDTH_RESIZE = 850;
+
+    // 2020
+    //var logos = ['assets/img/logo-gdg.png', 'assets/img/logo-galileo.png', 'assets/img/logo-innovation-square.png', 'assets/img/logo-agexport-ito.png', 'assets/img/logo-wwcode.png', 'assets/img/logo-telus-square.png', 'assets/img/logo-guatemala-com.png'];
+    // 2021
+    //var logos = ['assets/img/logo-gdg.png', 'assets/img/logo-innovation-square.png', 'assets/img/logo-galileo.png', 'assets/img/logo-wwcode.png', 'assets/img/logo-main.jpg', 'assets/img/logo-owsd.png', 'assets/img/logo-wie.png'];
+    var logos = [];
+
+
+    function generateHome(){
+        var element = $('#dynamic-information');
+
+        var html = '';
+            html += '<span class="subtitle">';
+            html += 'Información';
+            html += '</span>';
+            html += '<span class="text-big"><p>';
+            html += 'Women Techmakers Guatemala es una comunidad en la cual las mujeres en tecnología pueden inspirarse e incentivarse unas a otras para lograr sus sueños.<br><br>';
+            html += 'El Día Internacional de la Mujer (IWD, siglas en inglés) se conmemora el 8 de marzo alrededor del mundo, en cada región se realizan distintas actividades. En varios casos, se realiza con un enfoque específico en política, economía o tecnología. El objetivo de los eventos a llevarse a cabo en Guatemala es empoderar a mujeres que trabajan o tienen interés en tecnología a través de visibilizar esfuerzos, aumentar vínculos de comunidad y brindar los recursos necesarios para el crecimiento profesional.<br><br>';
+            html += 'Se tendrá una serie de conferencias de mujeres líderes en diversas áreas de la tecnología, comunicación, diseño gráfico y periodismo entre otras, además, se busca crear un espacio de networking.<br><br>';
+            html += 'El evento es completamente gratuito, solo requiere inscripción.';
+            html += '</p></span>';
+
+            html += '<span class="subtitle">';
+            html += 'Fecha';
+            html += '</span>';
+
+                /* FIND ME - info base del evento */
+
+            html += '<p>';
+            html += '<b><font size="3">Viernes 10 de marzo de 2023</font></b><br>';
+            html += 'Evento híbrido<br>';
+            html += 'Pronto más información<br><br>';
+
+            html += '<b><font size="3">Sábado 11 de marzo de 2023</font></b><br>';
+            html += 'Evento presencial<br>';
+            html += 'Pronto más información<br>';
+            html += '</p>';
+
+            //html += '<center><h2>¿Quieres dar una conferencia o taller? <a href="https://docs.google.com/forms/d/e/1FAIpQLSenN-3MaAQBWhbCcHEEmLz4nwrOXghj5bCiIX4Crp5kBIUWlA/viewform">Cuéntanos más.</a></h2></center>'
+        
+        element.find('.section-body').html(html);
+        
+        element.css('opacity', '1');
+        element.css('transform', 'translateY(0)');
+        element.css('z-index', '1');
+    }
+
+    function generateConduct(){
+        var element = $('#dynamic-information');
+
+        var html = '';
+            html += '<span class="subtitle">';
+            html += 'Código de Conducta';
+            html += '</span>';
+
+            html += '<p>';
+            html += 'Requerimos que todos los asistentes, ponentes, patrocinadores y voluntarios de nuestra conferencia estén de acuerdo con el siguiente código de conducta. La organización se encargará de que se cumpla durante el evento. Esperamos la colaboración de todos los participantes para ayudar a construir un entorno seguro para todo el mundo.';
+            html += '</p>';
+
+            html += '<span class="subtitle">';
+            html += 'La versión rápida';
+            html += '</span>';
+
+            html += '<p>';
+            html += 'Queremos que esta conferencia sea una experiencia libre de acoso para todo el mundo sin importar su género, su identidad o expresión de género, edad, orientación sexual, discapacidad, aspecto físico, raza o religión.<br><br>';
+            html += 'No toleraremos el acoso de ningún tipo a ningún participante. El lenguaje o las imágenes sexuales no son apropiadas para el evento, incluyendo las charlas, redes sociales y cualquier otro medio de comunicación. Los participantes que violen estas reglas podrán ser sancionados o expulsados de la conferencia a discreción de los organizadores.<br><br>'   
+            html += '</p>';
+
+            html += '<span class="subtitle">';
+            html += 'La versión no tan rápida';
+            html += '</span>';
+
+            html += '<p>';
+            html += 'Incluimos como acoso:';
+            html += '<ul>';
+            html += '<li>Los comentarios expresados (de manera escrita o verbal) ofensivos relacionados con el género, la identidad o expresión de género, edad, orientación sexual, discapacidad, apariencia física, raza, religión;</li>';
+            html += '<li>Imágenes sexuales en espacios públicos;</li>';
+            html += '<li>Intimidación deliberada;</li>';
+            html += '<li>Acecho o persecución;</li>';
+            html += '<li>El acoso con fotografías o vídeos;</li>';
+            html += '<li>La interrupción sostenida de charlas u otros eventos;</li>';
+            html += '<li>La atención sexual no deseada.</li>';
+            html += '</ul>';
+            html += '</p>';
+
+            html += '<p>';
+            html += 'Los patrocinadores también se encuentran sujetos a esta política.<br><br>';
+            html += 'En concreto, los patrocinadores no deben usar imágenes, actividades u otro material sexualizado. El personal (incluyendo los voluntarios) no debe utilizar ropa/uniformes/disfraces sexualizados, o crear de ninguna otra forma un entorno sexualizado. Si un participante tiene un comportamiento de acoso, los organizadores de la conferencia podrán tomar cualquier acción que consideren apropiada, incluyendo advertir al infractor o su expulsión de la conferencia. Si estás siendo acosado, sabes de alguien que lo está siendo o tienes alguna otra preocupación, por favor contacta con algún miembro de la organización inmediatamente. Los miembros de la organización estarán listos y dispuestos para ayudar a los participantes en esta situación o asistir de otra manera para ayudar a quienes están siendo acosados a sentirse seguros durante la conferencia. Valoramos tu participación. Esperamos que los participantes sigan estas reglas durante la conferencia.';
+            html += '</p>';
+
+
+            //html += '<center><h2>¿Quieres dar una conferencia o taller? <a href="https://docs.google.com/forms/d/e/1FAIpQLSenN-3MaAQBWhbCcHEEmLz4nwrOXghj5bCiIX4Crp5kBIUWlA/viewform">Cuéntanos más.</a></h2></center>'
+
+        
+        element.find('.section-body').html(html);
+        
+        element.css('opacity', '1');
+        element.css('transform', 'translateY(0)');
+        element.css('z-index', '1');
+    }
+
+    function generateAgenda(){
+        var actualDay = 1;
+        var separationCount = 0;
+        var night = false;
+        var element = $('#dynamic-information');
+
+        var html = "";
+            html += '<span class="agenda-container">';
+            //html += '<p class="helper">¿Asististe a la charla de Erika Luna (Platzi)? Puedes contactarnos a innovationlabug@gmail.com</p>'
+            html += '<span class="subtitle">';
+            
+                /* FIND ME - agenda */
+            
+            html += 'Viernes 10 de marzo';
+            html += '</span>';
+            html += '<p>';
+            html += 'Horario por definir - Colegios (comunicarse con innovationlabug@gmail.com para participar)';
+            html += '</p>';
+            html += '<p>';
+            html += 'Horario por definir - Público en general';
+            html += '</p>';
+            html += '<span class="subtitle">';
+            html += 'Sábado 11 de marzo';
+            html += '</span>';
+            html += '<p>';
+            html += 'Horario por definir - Público en general';
+            html += '</p>';
+            html += '<span class="other">';
+            html += '<span class="events-container">';
+
+        var oldDay = '0';
+        var oldHour = 25;
+        var oldMinutes = '61';
+        
+        html += '<span class="day-selection">';
+        html += '<span n="1" class="day-selector selected">';
+        html += 'Viernes 10'
+        html += '</span>';
+        html += '<span n="2" class="day-selector">';
+        html += 'Sábado 11'
+        html += '</span>';
+        html += '</span>';
+        html += '<span class="time-selection">';
+
+
+        /* Day/Night */
+        html += '<span n="1" class="time-selector selected">';
+        html += '<i style="font-size: 20px;" class="far fa-sun"></i> Día'
+        html += '</span>';
+        html += '<span n="2" class="time-selector">';
+        html += '<i style="font-size: 18px;" class="far fa-moon"></i> Noche'
+        html += '</span>';
+
+        html += '</span>';
+        
+        events.forEach((event)=>{
+            if(event.tba != '1'){
+                var hour = parseInt(event.time.substring(0, 2));
+                if(hour >= 12){
+                    ap = 'PM';
+                    
+                    /* FIND ME - hora limite entre manana y noche */
+
+                    if(hour >= 14){
+                        night = true;
+                    }else{
+                        night = false;
+                    }
+                    
+                    hour = (hour > 12)? hour - 12 : hour;
+                }else{
+                    ap = 'AM';
+                    night = false;
+                }
+                var strHour = (hour < 10)? `0${hour}` : `${hour}`;
+                var strMinutes = event.time.substring(3, 5);
+                var strTime = `${strHour}:${strMinutes}`;
+
+                if(oldMinutes == strMinutes && oldHour == hour){
+                    strHour = '';
+                    strMinutes = '';
+                    strTime = '';
+                    ap = '';
+                }else{
+                    oldHour = hour;
+                    oldMinutes = strMinutes;
+                }
+
+                if(oldDay != event.day){
+                    if(separationCount > 0) html += '</span>';
+                    separationCount++;
+                    html += (separationCount == 1)? `<span n="${separationCount}" class="day-card shown">` : `<span n="${separationCount}" class="day-card">`;
+                    html += '<span class="event-date">';
+                    if(event.day == 11) html += 'Viernes, 11 de marzo';
+                    else if(event.day == 12) html += 'Sábado, 12 de marzo';
+                    html += '</span>';
+                    oldDay = event.day;
+                }
+
+                html += (night)? '<span class="event-card night">' : '<span class="event-card shown">';
+                html += (night)? '<span class="event-time night">' : '<span class="event-time">';
+                html += '<span class="time">';
+                html += strTime;
+                html += '</span>';
+                html += '<span class="m">';
+                html += ap;
+                html += '</span>';
+                html += '</span>';
+
+                html += '<span class="event-information">';
+                html += '<span class class="date">';
+                html += '</span>';
+                html += '<span class="event-title">'; 
+                html += event.name;
+                html += '</span>';
+                html += '<span class="subjects-container">';
+                html += '<span class="event-ubication"><i class="fas fa-map-marker"></i>';
+                html += event.place;
+                html += '</span>';
+                event.subjects.forEach((subject)=>{
+                    html += '<span class="event-subject">';
+                    html += (subjects[subject] == null)?  '<i style="color: gray;" class="fas fa-circle"></i>' : `<i style="color: #${subjects[subject]};" class="fas fa-circle"></i>`;
+                    html += subject;
+                    html += '</span>';
+                });
+                html += '</span>';
+
+                if(event.description != 'TBA' && event.description != '' && event.description != null){
+                    html += '<span class="event-description">';
+                    html += event.description;
+                    html += '</span>';
+                }
+
+
+                if (typeof(event.speaker) == "string") {
+                    var speaker;                
+                    var finded = false;
+                    for(var i = 0; i < staff.length; i++){
+                        //console.log(event.speaker);
+                        speaker = staff[i];
+                        if(speaker.name == event.speaker){
+                            finded = true;
+                            break;
+                        }
+                    }
+                    if(finded){
+                        html += '<span class="event-speaker">';
+                        html += '<span class="staff-image">';
+                        html += (speaker.image == null)? '' : `<img class="img" img-path="assets/img/conf/${speaker.image}" src="assets/img/conf/${speaker.image}">`;
+                        html += '</span>';
+                        html += '<span class="staff-name">';    /* find me staff */
+
+                        if (speaker.nationality != "empty" && speaker.nationality != "") {
+                            html += `<span class="staff-flag"><img src="assets/img/paises/${speaker.nationality}.png"></span>`;
+                        }
+
+                        //html += speaker.name;
+                        html += event.speaker;
+                        html += '</span>';
+                        html += '</span>';
+                    } else if (event.speaker != '') {
+                        html += '<span class="event-speaker">';
+                        html += '<span class="staff-image">';
+                        html += '<img class="img" img-path="assets/img/conf/default.png" src="assets/img/conf/default.png">';
+                        html += '</span>';
+                        html += '<span class="staff-name">';    /* find me staff */
+                        html += event.speaker;
+                        html += '</span>';
+                        html += '</span>';
+                    }
+                } else {
+                    
+                    /* multiples conferencistas en un evento */
+                    event.speaker.forEach((speakerName) => {
+                        for (var i = 0; i < staff.length; i++) {
+                            speaker = staff[i];
+                            if (speaker.name == speakerName) {
+
+                                html += '<span class="event-speaker">';
+                                html += '<span class="staff-image">';
+                                html += (speaker.image == null)? '' : `<img class="img" img-path="assets/img/conf/${speaker.image}" src="assets/img/conf/${speaker.image}">`;
+                                html += '</span>';
+                                html += '<span class="staff-name">';
+
+                                if (speaker.nationality != "empty" && speaker.nationality != "") {
+                                    html += `<span class="staff-flag"><img src="assets/img/paises/${speaker.nationality}.png"></span>`;
+                                }
+
+                                //html += speaker.name;
+                                html += speaker.name;
+                                html += '</span>';
+                                html += '</span>';
+
+                                break;
+                            }
+                        }
+                    });
+                }
+
+                html += '</span>';
+                html += '</span>';
+            }
+        });
+
+        html += '</span>';
+        html += '</span>';
+
+        html += '</span>';
+
+        //html += '<center><h2>¿Quieres dar una conferencia o taller? <a href="https://docs.google.com/forms/d/e/1FAIpQLSenN-3MaAQBWhbCcHEEmLz4nwrOXghj5bCiIX4Crp5kBIUWlA/viewform">Cuéntanos más.</a></h2></center>'
+
+
+        element.find('.section-body').html(html);
+        element.css('opacity', '1');
+        element.css('transform', 'translateY(0)');
+        element.css('z-index', '1');
+
+        $('.day-selector').click((event)=>{
+            element = $(event.currentTarget);
+            if(!element.hasClass('selected')){
+                var index = element.attr('n');
+                $('.day-selector').each((i, selector)=>{
+                    if(selector.classList.contains('selected')) selector.classList.remove('selected');
+                    if(selector.getAttribute('n') == index){
+                        selector.classList.add('selected');
+                    }
+                });
+                $('.day-card').each((i, card)=>{
+                    if(card.classList.contains('shown')) card.classList.remove('shown');
+                    if(card.getAttribute('n') == index){
+                        card.classList.add('shown');
+                    }
+                });
+            }
+        });
+
+        $('.time-selector').click((event)=>{
+            element = $(event.currentTarget);
+            if(!element.hasClass('selected')){
+                var index = element.attr('n');
+                $('.time-selector').each((i, selector)=>{
+                    if(selector.classList.contains('selected')) selector.classList.remove('selected');
+                    if(selector.getAttribute('n') == index){
+                        selector.classList.add('selected');
+                    }
+                });
+                $('.day-card').each((i, card)=>{
+                    $(card).find('.event-card').each((j, event)=>{
+                        if(index == 1){
+                            if(!event.classList.contains('night')) event.classList.add('shown');
+                            else event.classList.remove('shown');
+                        }else if(index == 2){
+                            if(event.classList.contains('night')) event.classList.add('shown');
+                            else event.classList.remove('shown');
+                        }
+                    });
+                });
+            }
+        });
+
+        if(config.day == '11') $('.day-selector').each((index, selector)=>{
+            if(selector.getAttribute('n') == 2) selector.click();
+        });
+
+        if(config.time == 'night') $('.time-selector').each((index, selector)=>{
+            if(selector.getAttribute('n') == 2) selector.click();
+        });
+    }
+
+    function generateRegister(){
+        var element = $('#dynamic-information');
+
+        var html = "";
+
+            html += '<!-- Begin Mailchimp Signup Form --><link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css"><style type="text/css">#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }#mc_embed_signup .mc-field-group {clear:left; position:relative; width:96%; padding-bottom:3%; min-height:50px;}#mc_embed_signup .size1of2 {clear:none; float:left; display:inline-block; width:46%; margin-right:4%;}* html #mc_embed_signup .size1of2 {margin-right:2%; }#mc_embed_signup .mc-field-group label {display:block; margin-bottom:3px;}#mc_embed_signup .mc-field-group input {display:block; width:100%; padding:8px 0; text-indent:2%;}#mc_embed_signup .mc-field-group select {display:inline-block; width:99%; padding:5px 0; margin-bottom:2px; border-color: Black; background-color: White; color: Black}</style>';
+
+            html += '<div id="mc_embed_signup"><form action="https://galileo.us18.list-manage.com/subscribe/post?u=2ce9b0b87f346aca80c5c4aff&amp;id=a096158224" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>    <div id="mc_embed_signup_scroll"><div class="indicates-required"><span class="asterisk">*</span> indicates required</div><div class="mc-field-group"><label for="mce-FNAME">Nombres  <span class="asterisk">*</span></label><input type="text" value="" name="FNAME" class="required" id="mce-FNAME"></div><div class="mc-field-group"><label for="mce-LNAME">Apellidos  <span class="asterisk">*</span></label><input type="text" value="" name="LNAME" class="required" id="mce-LNAME"></div><div class="mc-field-group"><label for="mce-EMAIL">Correo electrónico  <span class="asterisk">*</span></label><input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL"></div><div class="mc-field-group size1of2"><label for="mce-PHONE">Teléfono </label><input type="text" name="PHONE" class="" value="" id="mce-PHONE"></div><div class="mc-field-group"><label for="mce-MMERGE6">¿A qué institución perteneces? </label><input type="text" value="" name="MMERGE6" class="" id="mce-MMERGE6"></div><div class="mc-field-group"><label for="mce-MMERGE9">¿De qué departamento del país eres?  <span class="asterisk">*</span></label><select name="MMERGE9" class="required" id="mce-MMERGE9"><option value=""></option><option value="Guatemala">Guatemala</option><option value="Escuintla">Escuintla</option><option value="Petén">Petén</option><option value="Izabal">Izabal</option><option value="Alta Verapaz">Alta Verapaz</option><option value="Baja Verapaz">Baja Verapaz</option><option value="Jutiapa">Jutiapa</option><option value="Jalapa">Jalapa</option><option value="Huehuetenango">Huehuetenango</option><option value="Quetzaltenango">Quetzaltenango</option><option value="San Marcos">San Marcos</option><option value="Retalhuleu">Retalhuleu</option><option value="Quiché">Quiché</option><option value="Santa Rosa">Santa Rosa</option><option value="Zacapa">Zacapa</option><option value="Chiquimula">Chiquimula</option><option value="Chimaltenango">Chimaltenango</option><option value="Sololá">Sololá</option><option value="Totonicapán">Totonicapán</option><option value="Sacatepéquez">Sacatepéquez</option><option value="Suchitepéquez">Suchitepéquez</option><option value="El Progreso">El Progreso</option></select></div><div class="mc-field-group"><label for="mce-MMERGE5">¿En qué rango de edad te encuentras?  <span class="asterisk">*</span></label><select name="MMERGE5" class="required" id="mce-MMERGE5"><option value=""></option><option value="13-19 años">13-19 años</option><option value="20-26 años">20-26 años</option><option value="27-33 años">27-33 años</option><option value="+34 años">+34 años</option></select></div><div class="mc-field-group input-group">    <strong>Términos  <span class="asterisk">*</span></strong>    <ul><li><input type="radio" value="Acepto recibir información relacionada al programa" name="MMERGE3" id="mce-MMERGE3-0"><label for="mce-MMERGE3-0">Acepto recibir información relacionada al programa</label></li></ul></div><div id="mce-responses" class="clear"><div class="response" id="mce-error-response" style="display:none"></div><div class="response" id="mce-success-response" style="display:none"></div></div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_2ce9b0b87f346aca80c5c4aff_a096158224" tabindex="-1" value=""></div>    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>    </div></form></div><!--End mc_embed_signup-->';
+
+        element.find('.section-body').html(html);
+        element.css('opacity', '1');
+        element.css('transform', 'translateY(0)');
+        element.css('z-index', '1');
+    }
+
+
+    function generateExpandedStaff(img_path, name, gde){
+        inExpanded = true;
+
+        var findedStaff;
+        staff.forEach((staffMember)=>{
+            if(staffMember.name == name){
+                findedStaff = staffMember;
+            }
+        });
+
+        var element = $('#dynamic-expanded-information');
+        var html = '';
+
+        html += '<span class="staff-expanded-card">';
+        html += '<span class="staff-image">';
+        html += (img_path == undefined)? '' : `<img class="img" src="${img_path}">`;
+
+        if(gde[0] != undefined) html += '<span class="gde-banner"><span class="img-container"><img src="assets/img/gde.png"></span></span>';
+
+        html += '</span>';
+
+        html += '<span class="staff-name">';
+
+        if (findedStaff.nationality != "empty" && findedStaff.nationality != "") {
+            html += `<span class="staff-flag"><img src="assets/img/paises/${findedStaff.nationality}.png"></span>`;
+        }
+
+        html += name;
+        html += '</span>';
+        //html += `<span class="staff-company">${findedStaff.company}</span>`;
+        html += `<span class="staff-information">${findedStaff.information}</span>`;
+
+        html += '<span class="events-container">';
+
+        var oldDay = '0';
+        events.forEach((event)=>{
+            if(event.speaker == name || (typeof(event.speaker) == "object" && event.speaker.includes(name))){
+
+                var hour = parseInt(event.time.substring(0, 2));
+                var ap = (hour >= 12)? 'PM' : 'AM';
+                hour = (hour > 12)? hour - 12 : hour;
+                var strHour = (hour < 10)? `0${hour}` : `${hour}`;
+                var strMinutes = event.time.substring(3, 5);
+
+                if(oldDay != event.day){
+                    html += '<span class="event-date">';
+                    if(event.day == 11) html += 'Viernes, 11 de marzo';
+                    else if(event.day == 12) html += 'Sábado, 12 de marzo';
+                    html += '</span>';
+                    oldDay = event.day;
+                }
+
+                html += '<span class="event-card shown">';
+
+                html += '<span class="event-time">';
+                html += '<span class="time">';
+                html += `${strHour}:${strMinutes}`;
+                html += '</span>';
+                html += '<span class="m">';
+                html += ap;
+                html += '</span>';
+                html += '</span>';
+
+                html += '<span class="event-information">';
+                html += '<span class class="date">';
+                html += '</span>';
+                html += '<span class="event-title">';
+                html += event.name;
+                html += '</span>';
+                html += '<span class="subjects-container">';
+                html += '<span class="event-ubication"><i class="fas fa-map-marker"></i>';
+                html += event.place;
+                html += '</span>';
+                event.subjects.forEach((subject)=>{
+                    html += '<span class="event-subject"><i class="fas fa-circle"></i>';
+                    html += subject;
+                    html += '</span>';
+                });
+
+                html += '</span>';
+
+                if(event.description != 'TBA' && event.description != '' && event.description != null){
+                    html += '<span class="event-description">';
+                    html += event.description;
+                    html += '</span>';
+                }
+
+                
+                html += '</span>';
+
+                html += '</span>';
+            }
+        });
+        html += '</span>';
+        html += '</span>';
+
+        html += '</span>';
+
+        element.find('.section-body').html(html);
+
+        setTimeout(()=>{
+            $('#dynamic-information').css('display', 'none');
+        }, 300);
+        $('#dynamic-expanded-information').css('width', '100vw');
+        $('#dynamic-expanded-information').css('height', '100vh');
+        $('#dynamic-expanded-information').css('opacity', '1');
+    }
+
+    function hideExpanded(){
+        inExpanded = false;
+        $('#dynamic-information').css('display', 'flex');
+        setTimeout(()=>{
+            $('#dynamic-expanded-information').find('.section-body').html('');
+            $('#dynamic-expanded-information').css('height', 'auto');
+        }, 300);
+        $('#dynamic-expanded-information').css('opacity', '0');
+        
+    }
+
+    function getSecondName(name){
+        return name.split(" ")[0];
+    }
+
+    function generateStaff(){
+        console.log("generating staff");
+        var element = $('#dynamic-information');
+        var html = '';
+
+        html += '<span class="staff-container">';
+        //html += '<p class="helper">¿Asististe a la charla de Erika Luna (Platzi)? Puedes contactarnos a innovationlabug@gmail.com</p>'
+        html += '<p class="helper">Click sobre la imagen para conocer más sobre la conferencista y su tema</p>'
+        
+        orderStaff.forEach(element => {
+            html += `<span class="staff-card ${element.job}">`;
+            html += '<span class="staff-image">';
+            html += (element.image == null)? '' : `<img class="img" img-path="assets/img/conf/${element.image}" src="">`;
+            if(element.gde != null){
+                html += '<span class="gde-banner"><span class="img-container"><img src="assets/img/gde.png"></span></span>';
+            }
+            html += '<span class="staff-job">';
+            html += 'Ver más';
+            html += '</span>';
+            html += '</span>';
+            html += '<span class="staff-name">';
+
+            if (element.nationality != "empty" && element.nationality != "") {
+                html += `<span class="staff-flag"><img src="assets/img/paises/${element.nationality}.png"></span>`;
+            }
+            
+            html += element.name;
+            html += '</span>';
+            //html += '<span class="staff-company">';
+            //html += element.company;
+            //html += '</span>';
+            html += '<span class="staff-information">';
+            html += '<p>';
+            html += element.short;
+            html += '</p>';
+            html += '</span>';
+            html += '</span>';
+        });
+        html += '</span>';
+
+        element.find('.section-body').html(html);
+
+        element.find('.section-body').find('.staff-container').find('.staff-card').each((index, element) => {
+            var actualImg = $(element).find('.staff-image');
+
+            if(actualImg.find('.img')[0] != undefined) actualImg.find('.img')[0].onload = () => {
+                actualImg.css('opacity', '1');
+                actualImg.css('transform', 'scale(1)');
+            }
+
+            actualImg.find('.img').attr('src', actualImg.find('.img').attr('img-path'));
+        });
+
+        element.css('opacity', '1');
+        element.css('transform', 'translateY(0)');
+        element.css('z-index', '1');
+
+        $('.staff-image').click((event)=>{
+            element = $(event.currentTarget);
+            var image_path = element.find('.img').attr('src');
+            var name = element.parent().find('.staff-name').text();
+            var gde = element.find('.gde-banner');
+            generateExpandedStaff(image_path, name, gde);
+        });
+        console.log("staff was generated");
+    }
+
+    function hideIndex(){
+        inIndex = false;
+        $('#copyright').css('bottom', '-23px');
+        $('#galileo-logo').css('bottom', '-140px');
+        $('#title-container').css('opacity', '0');
+        $('#title-container').css('transform', 'translateY(20px)');
+        $('#background').css('opacity', '0');
+        $('#back-container').find('.btn-back').css('transform', 'translateX(0)');
+        $('body').css('overflow-y', 'auto');
+        $('#title-container').css('z-index', '-1');
+
+        window.scroll({
+            top: 0, 
+            left: 0, 
+            behavior: 'smooth'
+        });
+    }
+
+    function showIndex(){
+        $('#copyright').css('bottom', '130px');
+        $('#galileo-logo').css('bottom', '0');
+        var element = $('#title-container');
+        element.css('opacity', '1');
+        element.css('transform', 'translateY(0)');
+        $('#background').css('opacity', '1');
+        $('#back-container').find('.btn-back').css('transform', 'translateX(-85px)');
+        element = $('#dynamic-information');
+        element.css('opacity', '0');
+        element.css('transform', 'translateY(-40px)');
+        element.css('z-index', 0);
+        element.css('padding', '15px 15px 70px 15px');
+        $('body').css('overflow-y', 'hidden');
+        $('#title-container').css('z-index', '1');
+        $('#background').removeClass('unfocused');
+        setTimeout(()=>{
+            element.find('.section-body').html('');
+        },400);
+        inIndex = true;
+        setTimeout(hideBackArrow(), 500);
+    }
+
+    function hideBackArrow() {
+        $('#back-container').find('.btn-back').css('transform', 'translateX(-85px)');
+    }
+
+    function populate() {
+        if(($(window).width() > WIDTH_RESIZE)){
+                $('#innovation-logo').attr('src','assets/img/logo-2022.gif');
+                //logo-main-web
+                $('.background').html('<img src="" alt="">');
+                $('.background').find('img')[0].onload = () => {
+                    $('.background').css('opacity', '1');
+                    $('.background').css('transform', 'scale(1)');
+                }
+                //$('.background').find('img').attr('src','assets/img/fondo.png');
+                //gdg, wtm, wie, ug
+                // LOGOS HERE
+                if (($(window).height() > 490) && ($(window).width() > WIDTH_RESIZE)) {
+                    var html = '';
+                    
+                    /*
+                    html += '<img src="" img-path="assets/img/logo-gdg.png" alt="GDG">';
+                    html += '<img src="" img-path="assets/img/logo-innovation-square.png" alt="Innovation Lab">';
+                    html += '<img src="" img-path="assets/img/logo-galileo.png" alt="Universidad Galileo">';
+                    html += '<img src="" img-path="assets/img/logo-wwcode.png" alt="Women Who Code">';
+                    html += '<img src="" img-path="assets/img/logo-main.png" alt="Women Techmakers">';
+                    html += '<img src="" img-path="assets/img/logo-owsd.jpg" alt="OWSD">';
+                    html += '<img src="" img-path="assets/img/logo-wie.png" alt="Women In Engineering">';
+                    */
+                    
+                    
+                    
+                    $("#galileo-logo").html(html);
+
+                    $("#galileo-logo").find('img').each((index, element)=>{
+                        element.onload = () => {
+                            $(element).css('opacity', '1');
+                        }
+
+                        $(element).attr('src', $(element).attr('img-path'));
+                    });
+                } else {
+                    $("#galileo-logo").html("");
+                }
+            }else{
+                $('#innovation-logo').attr('src','assets/img/logo-2022.gif');
+                //logo-main-phone
+                $('.background').html('');
+                var html = '';
+                html += '<span class="external-container">';
+                html += '<span class="left-logo">';
+                html += '<img src="">';
+                html += '</span>';
+                html += '<span class="center-logo">';
+                html += '<img src="">';
+                html += '</span>';
+                html += '<span class="right-logo">';
+                html += '<img src="">';
+                html += '</span>';
+                html += '</span>';
+                if ($(window).height() > 490) {
+                    $("#galileo-logo").html(html);
+                    activateCarousel();
+                } else {
+                    $("#galileo-logo").html("");
+                }
+            }
+    }
+
+    function generatePlace(){
+        var element = $('#dynamic-information');
+        var html = '';
+        
+        /* FIND ME */
+
+        html += '<center><h3>Viernes 13 de marzo - Universidad Galileo</h3></center>'
+        html += '<span class="map-container">';
+        html += '<iframe width="500" height="500" frameborder="0" src="https://maps.google.com/maps?q=universidad%20galileo&t=&z=17&ie=UTF8&iwloc=&output=embed" allowfullscreen></iframe>';
+        html += '</span>';
+        html += '<center><h3>Sábado 14 de marzo - AGEXPORT</h3></center>'
+        html += '<span class="map-container">';
+        html += '<iframe width="500" height="500" frameborder="0" src="https://maps.google.com/maps?q=agexport&t=&z=17&ie=UTF8&iwloc=&output=embed" allowfullscreen></iframe>';
+        html += '</span>';
+
+
+        element.find('.section-body').html(html);
+
+        element.css('opacity', '1');
+        element.css('transform', 'translateY(0)');
+        element.css('z-index', '1');
+    }
+
+    function activateCarousel(){
+        var index = 4;
+        var lim = logos.length;
+
+        var leftElement = $('#galileo-logo').find('.external-container').find('.left-logo').find('img');
+        leftElement[0].onload = () => {
+            leftElement.css('opacity', '1');
+        };
+        leftElement.attr('src', logos[3]);
+        var centerElement = $('#galileo-logo').find('.external-container').find('.center-logo').find('img');
+        centerElement[0].onload = () => {
+            centerElement.css('opacity', '1');
+        };
+        centerElement.attr('src', logos[2]);
+        var rightElement = $('#galileo-logo').find('.external-container').find('.right-logo').find('img');
+        rightElement[0].onload = () => {
+            rightElement.css('opacity', '1');
+        };
+        rightElement.attr('src', logos[1]);
+
+
+        if(!isCarouselOn){
+            isCarouselOn = true;
+            setInterval(()=>{
+            
+                if(inIndex){
+                    var xc = $('#galileo-logo').find('.external-container');
+                    var left = xc.find('.left-logo');
+                    var right = xc.find('.right-logo');
+                    var center = xc.find('.center-logo');
+
+                    right.find('img').attr('src', logos[index++%lim]);
+
+                    left.removeClass('left-logo');
+                    left.addClass('center-logo');
+
+                    center.removeClass('center-logo');
+                    center.addClass('right-logo');
+
+                    right.removeClass('right-logo');
+                    right.addClass('left-logo');
+
+                    left.css('transition', '3s ease');
+                    left.css('right', 0);
+                    left.css('left', 0);
+
+                    center.css('right', '-100%');
+                    center.css('left', '100%');
+
+                    right.css('transition', 'none');
+                    right.css('left', '-100%');
+                    right.css('right', '100%');
+                }
+            }, 3000);
+        } 
+    }
+
+    /* Draw again if size or orientation changes */
+    $(window).resize(()=>{
+        if(inIndex) { populate(); }
+    });
+    window.addEventListener("orientationchange", function() {
+        if (inIndex) { populate(); }
+    }, false);
+
+
+    //$(document).ready(()=>{
+    (function($) {
+
+        var inserted = false;
+        staff.forEach((element, index) => {
+            inserted = false;
+            if(orderStaff.length == 0){
+                orderStaff.unshift(element);
+            }else{
+                orderStaff.forEach((actualElement, actualIndex) => {
+                    var comp = getSecondName(element.name).localeCompare(getSecondName(actualElement.name), 'en', {sensitivity: 'base'});
+                    if((comp == -1 || comp == 0) && !inserted){
+                        orderStaff.splice(actualIndex, 0, element);
+                        inserted = true;
+                    }
+                });
+                if(!inserted){
+                    orderStaff.push(element);
+                }
+            }
+        });
+
+        if(window.location.hash) {
+            // Remove the # character
+            var hash = window.location.hash.substring(1); 
+            if(hash == 'registro' || hash == 'r'){
+                hideIndex();
+                generateRegister();
+            } else if (hash == 'agenda' || hash == 'a') {
+                hideIndex();
+                generateAgenda();
+            } else if (hash == 'conferencistas' || hash == 'c') {
+                hideIndex();
+                console.log('staff');
+                generateStaff();
+            } else if (hash == 'conducta' || hash == 'cc') {
+                hideIndex();
+                generateConduct();
+            }
+        }
+
+        $('#innovation-logo')[0].onload = ()=>{
+            if(inIndex) $('.title-container').css('opacity', '1');
+        };
+
+        populate();
+
+        $('.btn-menu').click((event)=>{
+            if(!$(event.currentTarget).hasClass('disabled')){
+                hideIndex();
+
+                var element = event.target;
+                switch(element.id){
+                    case 'home-access':{
+                        //window.location.href = "https://www.galileo.edu/page/international-women-day-women-techmakers/";
+                        generateHome();
+                    }break;
+                    case 'staff-access':{
+                        generateStaff();
+                    }break;
+                    case 'agenda-access':{
+                        generateAgenda();
+                    }break;
+                    case 'place-access':{
+                        $('#dynamic-information').css('padding', '0');
+                        generatePlace();
+                    }break;
+                    case 'register-access':{
+                        generateRegister();
+                    }break;
+                    case 'conduct-access':{
+                        generateConduct();
+                    }
+                }
+            }
+        });
+
+        $('#back').click(()=>{
+            if(inExpanded) hideExpanded();
+            else showIndex();
+        });
+    //});
+    })(jQuery); 
+</script>
