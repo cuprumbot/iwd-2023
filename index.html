@@ -50,22 +50,28 @@
     </script>
 </head>
 <body font-family="Product">
+    <div class="loader">
+        <div class="loader-outter"></div>
+        <div class="loader-inner"></div>
+    </div>
     <span id="background" class="background">
     </span>
     <span class="title-container">
         <span class="inner-container">
             <span id="title-container" class="title-container no-select">
                 <span class="title">
+                    <div class="logo-loader">
+                        <div class="logo-loader-outter"></div>
+                        <div class="logo-loader-inner"></div>
+                    </div>
                     <img id="innovation-logo" class="innovation-logo" src="" alt="">
                 </span>
 
                 <span class="title-menu">
                     <a id="staff-access" class="btn-menu c3">Conferencistas</a>
                     <a id="agenda-access" class="btn-menu c3">Agenda</a>
-                    <!-- <a id="register-access" class="btn-menu c3">Registrate</a> -->
                     <a id="home-access" class="btn-menu c1">Más información</a>
                     <a id="conduct-access" class="btn-menu c4">Código de Conducta</a>
-                    
                 </span>
             </span>
         </span>
@@ -106,7 +112,7 @@
     var WIDTH_RESIZE = 765;
 
     // 2021
-    var logos = ['assets/img/logo-gdg.png', 'assets/img/logo-innovation-square.png', 'assets/img/logo-galileo.png'];
+    var logos = ['assets/img/logo-ug.png', 'assets/img/logo-wtm.jpg', 'assets/img/logo-innovation-lab.png', 'assets/img/logo-gdg-guatemala.png', 'assets/img/logo-gdg-cloud.png'];
 
     function generateHome(){
         var element = $('#dynamic-information');
@@ -189,7 +195,6 @@
             html += 'Los patrocinadores también se encuentran sujetos a esta política.<br><br>';
             html += 'En concreto, los patrocinadores no deben usar imágenes, actividades u otro material sexualizado. El personal (incluyendo los voluntarios) no debe utilizar ropa/uniformes/disfraces sexualizados, o crear de ninguna otra forma un entorno sexualizado. Si un participante tiene un comportamiento de acoso, los organizadores de la conferencia podrán tomar cualquier acción que consideren apropiada, incluyendo advertir al infractor o su expulsión de la conferencia. Si estás siendo acosado, sabes de alguien que lo está siendo o tienes alguna otra preocupación, por favor contacta con algún miembro de la organización inmediatamente. Los miembros de la organización estarán listos y dispuestos para ayudar a los participantes en esta situación o asistir de otra manera para ayudar a quienes están siendo acosados a sentirse seguros durante la conferencia. Valoramos tu participación. Esperamos que los participantes sigan estas reglas durante la conferencia.';
             html += '</p>';
-
 
             //html += '<center><h2>¿Quieres dar una conferencia o taller? <a href="https://docs.google.com/forms/d/e/1FAIpQLSenN-3MaAQBWhbCcHEEmLz4nwrOXghj5bCiIX4Crp5kBIUWlA/viewform">Cuéntanos más.</a></h2></center>'
 
@@ -735,10 +740,12 @@
                 if (($(window).height() > 490) && ($(window).width() > WIDTH_RESIZE)) {
                     var html = '';
                     
-                    html += '<img src="" img-path="assets/img/logo-gdg.png" alt="GDG">';
-                    html += '<img src="" img-path="assets/img/logo-innovation-square.png" alt="Innovation Lab">';
-                    html += '<img src="" img-path="assets/img/logo-galileo.png" alt="Universidad Galileo">';                
-                                        
+                    html += '<img src="" img-path="assets/img/logo-galileo.png" alt="Universidad Galileo">';
+                    html += '<img src="" img-path="assets/img/logo-wtm.jpg" alt="Women Techmakers">';
+                    html += '<img src="" img-path="assets/img/logo-innovation-lab.png" alt="Innovation Lab">';
+                    html += '<img src="" img-path="assets/img/logo-gdg-guatemala.png" alt="GDG Guatemala">';
+                    html += '<img src="" img-path="assets/img/logo-gdg-cloud.png" alt="GDG Cloud">';
+                    
                     $("#galileo-logo").html(html);
 
                     $("#galileo-logo").find('img').each((index, element)=>{
@@ -911,6 +918,9 @@
         };
 
         populate();
+
+        $('.loader').delay(700).fadeOut('slow');
+        $('.logo-loader').delay(2500).fadeOut('slow');
 
         $('.btn-menu').click((event)=>{
             if(!$(event.currentTarget).hasClass('disabled')){
