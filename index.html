@@ -103,14 +103,10 @@
     var inExpanded = false;
     var orderStaff = new Array();
 
-    var WIDTH_RESIZE = 850;
+    var WIDTH_RESIZE = 765;
 
-    // 2020
-    //var logos = ['assets/img/logo-gdg.png', 'assets/img/logo-galileo.png', 'assets/img/logo-innovation-square.png', 'assets/img/logo-agexport-ito.png', 'assets/img/logo-wwcode.png', 'assets/img/logo-telus-square.png', 'assets/img/logo-guatemala-com.png'];
     // 2021
-    //var logos = ['assets/img/logo-gdg.png', 'assets/img/logo-innovation-square.png', 'assets/img/logo-galileo.png', 'assets/img/logo-wwcode.png', 'assets/img/logo-main.jpg', 'assets/img/logo-owsd.png', 'assets/img/logo-wie.png'];
-    var logos = [];
-
+    var logos = ['assets/img/logo-gdg.png', 'assets/img/logo-innovation-square.png', 'assets/img/logo-galileo.png'];
 
     function generateHome(){
         var element = $('#dynamic-information');
@@ -221,7 +217,7 @@
             html += 'Viernes 10 de marzo';
             html += '</span>';
             html += '<p>';
-            html += 'Horario por definir - Colegios (comunicarse con innovationlabug@gmail.com para participar)';
+            html += 'Horario por definir - Colegios (para participar comunicarse con innovationlabug@gmail.com)';
             html += '</p>';
             html += '<p>';
             html += 'Horario por definir - Público en general';
@@ -619,7 +615,6 @@
         var html = '';
 
         html += '<span class="staff-container">';
-        //html += '<p class="helper">¿Asististe a la charla de Erika Luna (Platzi)? Puedes contactarnos a innovationlabug@gmail.com</p>'
         html += '<p class="helper">Click sobre la imagen para conocer más sobre la conferencista y su tema</p>'
         
         orderStaff.forEach(element => {
@@ -727,7 +722,7 @@
 
     function populate() {
         if(($(window).width() > WIDTH_RESIZE)){
-                $('#innovation-logo').attr('src','assets/img/logo-2022.gif');
+                $('#innovation-logo').attr('src','assets/img/logo-2023.gif');
                 //logo-main-web
                 $('.background').html('<img src="" alt="">');
                 $('.background').find('img')[0].onload = () => {
@@ -740,18 +735,10 @@
                 if (($(window).height() > 490) && ($(window).width() > WIDTH_RESIZE)) {
                     var html = '';
                     
-                    /*
                     html += '<img src="" img-path="assets/img/logo-gdg.png" alt="GDG">';
                     html += '<img src="" img-path="assets/img/logo-innovation-square.png" alt="Innovation Lab">';
-                    html += '<img src="" img-path="assets/img/logo-galileo.png" alt="Universidad Galileo">';
-                    html += '<img src="" img-path="assets/img/logo-wwcode.png" alt="Women Who Code">';
-                    html += '<img src="" img-path="assets/img/logo-main.png" alt="Women Techmakers">';
-                    html += '<img src="" img-path="assets/img/logo-owsd.jpg" alt="OWSD">';
-                    html += '<img src="" img-path="assets/img/logo-wie.png" alt="Women In Engineering">';
-                    */
-                    
-                    
-                    
+                    html += '<img src="" img-path="assets/img/logo-galileo.png" alt="Universidad Galileo">';                
+                                        
                     $("#galileo-logo").html(html);
 
                     $("#galileo-logo").find('img').each((index, element)=>{
@@ -765,7 +752,7 @@
                     $("#galileo-logo").html("");
                 }
             }else{
-                $('#innovation-logo').attr('src','assets/img/logo-2022.gif');
+                $('#innovation-logo').attr('src','assets/img/logo-2023.gif');
                 //logo-main-phone
                 $('.background').html('');
                 var html = '';
