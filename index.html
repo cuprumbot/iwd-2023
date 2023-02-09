@@ -64,7 +64,7 @@
                         <div class="logo-loader-outter"></div>
                         <div class="logo-loader-inner"></div>
                     </div>
-                    <img id="innovation-logo" class="innovation-logo" src="" alt="">
+                    <!-- <img id="innovation-logo" class="innovation-logo" src="" alt=""> -->
                 </span>
 
                 <span class="title-menu">
@@ -89,8 +89,6 @@
         </span>
     </span>
 
-
-
     <span id="galileo-logo" class="galileo-logo">
         
     </span>
@@ -111,7 +109,6 @@
 
     var WIDTH_RESIZE = 765;
 
-    // 2021
     var logos = ['assets/img/logo-galileo.png', 'assets/img/logo-wtm.jpg', 'assets/img/logo-innovation-lab.png', 'assets/img/logo-gdg-guatemala.png', 'assets/img/logo-gdg-cloud.png'];
 
     function generateHome(){
@@ -735,7 +732,7 @@
                     $('.background').css('transform', 'scale(1)');
                 }
                 //$('.background').find('img').attr('src','assets/img/fondo.png');
-                //gdg, wtm, wie, ug
+                
                 // LOGOS HERE
                 if (($(window).height() > 490) && ($(window).width() > WIDTH_RESIZE)) {
                     var html = '';
@@ -868,7 +865,7 @@
         if(inIndex) { populate(); }
     });
     window.addEventListener("orientationchange", function() {
-        if (inIndex) { populate(); }
+        if(inIndex) { populate(); }
     }, false);
 
 
@@ -913,11 +910,12 @@
             }
         }
 
+        logoHtml = '<img id="innovation-logo" class="innovation-logo" src="" alt="">';
+        $('#title-container').find('.title').append(logoHtml);
+
         $('#innovation-logo')[0].onload = ()=>{
             if(inIndex) $('.title-container').css('opacity', '1');
         };
-
-        populate();
 
         $('.loader').delay(700).fadeOut('slow');
         $('.logo-loader').delay(2500).fadeOut('slow');
@@ -956,6 +954,8 @@
             if(inExpanded) hideExpanded();
             else showIndex();
         });
+
+        populate();
     //});
     })(jQuery); 
 </script>
