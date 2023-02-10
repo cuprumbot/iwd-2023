@@ -108,6 +108,7 @@
     var orderStaff = new Array();
 
     var WIDTH_RESIZE = 765;
+    var TABLET_SIZE = 768;
 
     var logos = ['assets/img/logo-galileo.png', 'assets/img/logo-wtm.jpg', 'assets/img/logo-innovation-lab.png', 'assets/img/logo-gdg-guatemala.png', 'assets/img/logo-gdg-cloud.png'];
 
@@ -723,42 +724,33 @@
     }
 
     function populate() {
-        if(($(window).width() > WIDTH_RESIZE)){
-                $('#innovation-logo').attr('src','assets/img/logo-2023.gif');
-                //logo-main-web
-                $('.background').html('<img src="" alt="">');
-                $('.background').find('img')[0].onload = () => {
-                    $('.background').css('opacity', '1');
-                    $('.background').css('transform', 'scale(1)');
-                }
-                //$('.background').find('img').attr('src','assets/img/fondo.png');
+        $('#innovation-logo').attr('src','assets/img/logo-2023.gif');
+
+        if( ($(window).width() > TABLET_SIZE)){
+            
+            if ( $(window).height() > 620 ) {
+                var html = '';
                 
-                // LOGOS HERE
-                if (($(window).height() > 490) && ($(window).width() > WIDTH_RESIZE)) {
-                    var html = '';
-                    
-                    html += '<img src="" img-path="assets/img/logo-galileo.png" alt="Universidad Galileo">';
-                    html += '<img src="" img-path="assets/img/logo-wtm.jpg" alt="Women Techmakers">';
-                    html += '<img src="" img-path="assets/img/logo-innovation-lab.png" alt="Innovation Lab">';
-                    html += '<img src="" img-path="assets/img/logo-gdg-guatemala.png" alt="GDG Guatemala">';
-                    html += '<img src="" img-path="assets/img/logo-gdg-cloud.png" alt="GDG Cloud">';
-                    
-                    $("#galileo-logo").html(html);
+                html += '<img src="" img-path="assets/img/logo-galileo.png" alt="Universidad Galileo">';
+                html += '<img src="" img-path="assets/img/logo-wtm.jpg" alt="Women Techmakers">';
+                html += '<img src="" img-path="assets/img/logo-innovation-lab.png" alt="Innovation Lab">';
+                html += '<img src="" img-path="assets/img/logo-gdg-guatemala.png" alt="GDG Guatemala">';
+                html += '<img src="" img-path="assets/img/logo-gdg-cloud.png" alt="GDG Cloud">';
+                
+                $("#galileo-logo").html(html);
 
-                    $("#galileo-logo").find('img').each((index, element)=>{
-                        element.onload = () => {
-                            $(element).css('opacity', '1');
-                        }
+                $("#galileo-logo").find('img').each((index, element)=>{
+                    element.onload = () => { $(element).css('opacity', '1'); }
 
-                        $(element).attr('src', $(element).attr('img-path'));
-                    });
-                } else {
-                    $("#galileo-logo").html("");
-                }
-            }else{
-                $('#innovation-logo').attr('src','assets/img/logo-2023.gif');
-                //logo-main-phone
-                $('.background').html('');
+                    $(element).attr('src', $(element).attr('img-path'));
+                });
+            } else {
+                $("#galileo-logo").html("");
+            }
+
+        } else {
+        
+            if ( $(window).height() > 430 ) {
                 var html = '';
                 html += '<span class="external-container">';
                 html += '<span class="left-logo">';
@@ -771,13 +763,14 @@
                 html += '<img src="">';
                 html += '</span>';
                 html += '</span>';
-                if ($(window).height() > 490) {
-                    $("#galileo-logo").html(html);
-                    activateCarousel();
-                } else {
-                    $("#galileo-logo").html("");
-                }
+
+                $("#galileo-logo").html(html);
+                activateCarousel();
+            } else {
+                $("#galileo-logo").html("");
             }
+
+        }
     }
 
     function generatePlace(){
