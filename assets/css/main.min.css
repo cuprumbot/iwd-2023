@@ -204,7 +204,6 @@ body {
 section {
   display: -webkit-box; }
 
-
 .btn-register, .btn-back, .btn-purchase, .btn-cancel, .btn-login, .btn-menu, .btn-accept, .admin-shop-form label {
   display: inline-block;
   padding: 5px 10px;
@@ -807,12 +806,6 @@ body {
         display: flex;
         justify-content: center;
         align-items: center; } }
-  
-/*
-  @media only screen and (max-width: 765px) {
-  .galileo-logo {
-      justify-content: space-between; } }
-*/
 
   .galileo-logo img {
     opacity: 0;
@@ -828,31 +821,6 @@ body {
       margin: 5px 10px; 
     }
   }
-
-      /*
-  @media only screen and (max-width: 769px) {
-    .galileo-logo img {
-      height: 70px;
-      margin: 5px 5px; } }
-      */
-
-        /*
-.copyright {
-  position: fixed;
-  bottom: 130px;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  color: black;
-  z-index: 1;
-  transition: 0.4s ease; }
-  @media only screen and (max-width: 650px) {
-    .copyright {
-      font-size: 12px; } }
-  @media only screen and (max-width: 500px) {
-    .copyright {
-      font-size: 11px; } }
-      */
 
 .back-container {
   position: fixed;

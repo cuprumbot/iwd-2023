@@ -70,8 +70,9 @@
                 <span class="title-menu">
                     <a id="staff-access" class="btn-menu c3">Conferencistas</a>
                     <a id="agenda-access" class="btn-menu c3">Agenda</a>
-                    <a id="home-access" class="btn-menu c1">Más información</a>
+                    <a id="home-access" class="btn-menu c4">Más información</a>
                     <a id="conduct-access" class="btn-menu c4">Código de Conducta</a>
+                    <a id="register-access" class="btn-menu c1">Registro</a>
                 </span>
             </span>
         </span>
@@ -133,11 +134,11 @@
                 /* FIND ME - info base del evento */
 
             html += '<p>';
-            html += '<b><font size="3">Viernes 10 de marzo de 2023</font></b><br>';
+            html += '<b><font size="3">Viernes 24 de marzo de 2023</font></b><br>';
             html += 'Evento híbrido<br>';
             html += 'Pronto más información<br><br>';
 
-            html += '<b><font size="3">Sábado 11 de marzo de 2023</font></b><br>';
+            html += '<b><font size="3">Sábado 25 de marzo de 2023</font></b><br>';
             html += 'Evento presencial<br>';
             html += 'Pronto más información<br>';
             html += '</p>';
@@ -217,7 +218,7 @@
             
                 /* FIND ME - agenda */
             
-            html += 'Viernes 10 de marzo';
+            html += 'Viernes 24 de marzo';
             html += '</span>';
             html += '<p>';
             html += 'Horario por definir - Colegios (para participar comunicarse con innovationlabug@gmail.com)';
@@ -226,7 +227,7 @@
             html += 'Horario por definir - Público en general';
             html += '</p>';
             html += '<span class="subtitle">';
-            html += 'Sábado 11 de marzo';
+            html += 'Sábado 25 de marzo';
             html += '</span>';
             html += '<p>';
             html += 'Horario por definir - Público en general';
@@ -297,8 +298,8 @@
                     separationCount++;
                     html += (separationCount == 1)? `<span n="${separationCount}" class="day-card shown">` : `<span n="${separationCount}" class="day-card">`;
                     html += '<span class="event-date">';
-                    if(event.day == 11) html += 'Viernes, 11 de marzo';
-                    else if(event.day == 12) html += 'Sábado, 12 de marzo';
+                    if(event.day == 24) html += 'Viernes, 24 de marzo';
+                    else if(event.day == 25) html += 'Sábado, 25 de marzo';
                     html += '</span>';
                     oldDay = event.day;
                 }
@@ -535,8 +536,8 @@
 
                 if(oldDay != event.day){
                     html += '<span class="event-date">';
-                    if(event.day == 11) html += 'Viernes, 11 de marzo';
-                    else if(event.day == 12) html += 'Sábado, 12 de marzo';
+                    if(event.day == 24) html += 'Viernes, 24 de marzo';
+                    else if(event.day == 25) html += 'Sábado, 25 de marzo';
                     html += '</span>';
                     oldDay = event.day;
                 }
@@ -779,13 +780,13 @@
         
         /* FIND ME */
 
-        html += '<center><h3>Viernes 13 de marzo - Universidad Galileo</h3></center>'
+        html += '<center><h3>Viernes 24 de marzo - Universidad Galileo</h3></center>'
         html += '<span class="map-container">';
         html += '<iframe width="500" height="500" frameborder="0" src="https://maps.google.com/maps?q=universidad%20galileo&t=&z=17&ie=UTF8&iwloc=&output=embed" allowfullscreen></iframe>';
         html += '</span>';
-        html += '<center><h3>Sábado 14 de marzo - AGEXPORT</h3></center>'
+        html += '<center><h3>Sábado 24 de marzo - Universidad Galileo</h3></center>'
         html += '<span class="map-container">';
-        html += '<iframe width="500" height="500" frameborder="0" src="https://maps.google.com/maps?q=agexport&t=&z=17&ie=UTF8&iwloc=&output=embed" allowfullscreen></iframe>';
+        html += '<iframe width="500" height="500" frameborder="0" src="https://maps.google.com/maps?q=universidad%20galileo&t=&z=17&ie=UTF8&iwloc=&output=embed" allowfullscreen></iframe>';
         html += '</span>';
 
 
@@ -934,7 +935,8 @@
                         generatePlace();
                     }break;
                     case 'register-access':{
-                        generateRegister();
+                        window.location.href = "https://www.galileo.edu/page/international-women-day-women-techmakers-2023/";
+                        //generateRegister();
                     }break;
                     case 'conduct-access':{
                         generateConduct();
