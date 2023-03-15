@@ -81,6 +81,8 @@ var staff = [
         "image": "MariaFuentes.jpg",
         "nationality": "guatemala"
     },
+
+    /*Puso Link*/
     {
         "name": "Lissy Amador Sazo",
         "short": "",
@@ -88,66 +90,96 @@ var staff = [
         "image": "LissyAmador.jpg",
         "nationality": "guatemala"
     },
+    /*Segundo Commit*/
     {
         "name": "Marisabel Ruiz",
         "short": "",
-        "information": "",
+        "information": "Marisabel Ruiz es una emprendedora social, fundadora de Sheva,"
+        + "un programa que provee capacitaciones educativas a más de 50 mil mujeres y niñas en Latino América"
+        + "para utilizar la tecnología móvil y participar en la economía digital."
+        + "Sheva fue nominado por las Naciones Unidas Premios Equals como uno de los top 15 proyectos en el mundo que busca disminuir la brecha digital de género."
+        + "Fue nominado por los Global Mobile Awards GSMA, el evento más importante del mundo de tecnología móvil,"
+        + "como uno de los mejores 5 proyectos de innovación en el mundo enfocado en mujeres en mercados emergentes."
+        + "Marisabel apoya grupos y eventos relacionados a emprendimiento e impacto como Global Shapers Guatemala y MEG Guatemala",
         "image": "MarisabelRuiz.jpg",
         "nationality": "guatemala"
     },
     {
         "name": "Ana Lucía Toledo",
         "short": "",
-        "information": "",
+        "information": "Soy Analú Toledo, me dedico a la reposteria creatuva y de diseño, mi página es @glassebyanalu ,"
+        + "aparte de crear pasteles y plasmar los sentimientos e ideas de las personas en ellos ahora me dedico a enseñar y compartir mis conocimientos.",
         "image": "AnaToledo.jpg",
         "nationality": "guatemala"
     },
     {
         "name": "Adriana Lizzeth Pinto Agustín",
         "short": "",
-        "information": "",
+        "information": "Ingeniera de Diseño y Desarrollo en Bowpi."
+        + "Diez años de experiencia en proyectos de tecnología y cinco trabajando en proyectos innovadores en una Fintech."
+        + "Me encanta ver cómo los equipos multidisciplinarios pueden aportar ala transformación digital de las empresas.",
         "image": "AdrianaPinto.jpg",
         "nationality": "guatemala"
     },
     {
         "name": "Guisela Margarita Estrada Guerra",
         "short": "",
-        "information": "",
+        "information": "19 años de experiencia en Créditos y Cobros, Lic. en Administración de empresas, Emprendimiento de la marca Moti promoviendo las ventas en linea ",
         "image": "GuiselaEstrada.jpg",
         "nationality": "guatemala"
     },
     {
         "name": "Nancy Virginia Sandoval Paiz",
         "short": "",
-        "information": "",
+        "information": "La Dra. Nancy Virginia Sandoval Paiz es médica y Cirujana egresada de Universidad de San Carlos de Guatemala, tiene la"
+        + "Especialidad de Medicina Interna del Hospital Roosevelt, Guatemala, es  Máster Internacional en Enfermedades Parasitarias Tropicales por Universidad de Valencia, España"
+        + "y posee la Maestría en Enfermedades Infecciosas  del Hospital del Mar por la Universidad Autónoma de Barcelona, España"
+        + "Es Past President de la Asociación Centroamerica y del Caribe de Infectología -ACENCAI- y de la Asociación Guatemalteca de Enfermedades Infecciosas -AGEI-,"
+        + "actualmente es Vocal I de la Junta Directiva y Representante de AGEI ante el Consejo Nacional de Prácticas de Inmunizaciones -CONAPI-"
+        + "y del Comité de Vacunas de la Asociación Panamericana de Infectología."
+        + "Se desempeña como Jefe de Servicio e Infectóloga del Comité de Seguridad del Paciente del Departamento de Medicina Interna,"
+        + "Miembro activo del Programa de Optimización de Uso de Antimicrobianos y del Comité de Infecciones Nosocomiales del Hospital Roosevelt."
+        + "Ha participado en la elaboración y preparación de guías nacionales e internacionales en temas de Arbovirosis, Virus Emergentes, Ébola, Tuberculosis, VIH/SIDA,"
+        + "Programas de Control de Infecciones, Resistencias Antimicrobianas, Preparación y Respuesta a Pandemias, COVID-19, MPX, Vacunación del Adulto, Vacunación COVID."  
+        + "Es profesora titular de Pregrado de Medicina Interna de Universidad Rafael Landívar y Chair de la Organización de Mujeres en la Ciencia para el Mundo en Desarrollo OWSD- Capítulo Guatemala.",
         "image": "NancySandoval.jpg",
         "nationality": "guatemala"
     },
     {
         "name": "Marcela Ambrosio",
         "short": "",
-        "information": "",
+        "information": "Soy ingeniera en Sistemas UMG, actualmente me encuentro estudiando la maestria en Data Science en Universidad Galileo."
+        + "Soy docente de cátedra en Universidad Galileo específicamente en cursos de la maestría de BI."
+        + "Cuento con las certificaciones Microsoft en PBI y la de Azure Data Engineer Associate."
+        + "Cuento con más de 12 años de experiencia en el área de TI.",
         "image": "MarcelaAmbrosio.jpg",
         "nationality": "guatemala"
     },
     {
         "name": "Andrea Mazariegos",
         "short": "",
-        "information": "",
+        "information": "Ingeniera de profesión, pero emprendedora y consultora en desarrollo internacional por pasión."
+        + "Fascinada por el aprendizaje constante, el crecimiento personal y profesional y la inclusión de mujeres en tecnología. ",
         "image": "AndreaMazariegos.jpg",
         "nationality": "guatemala"
     },
     {
         "name": "Julia Marielos Argueta Revolorio",
         "short": "",
-        "information": "",
+        "information": "Soy una persona apasionada por la Tecnología y la Ciberseguridad,"
+        + "con una fuerte convicción en que el conocimiento es el principal factor de cambio para la mujer moderna."
+        + "Soy Ingeniera en Sistemas y Ciencias de la Computación ademas cuento con un Master en Seguridad Informática,"
+        + "actualmente me desempeño en el área de Seguridad de la Información para Tigo Guatemala, "
+        + "dentro de mi trayectoria profesional cuento con mas de 5 años en Auditoría Informática en múltiples industrias de las que destacan Agropecuaria, Energía y Manufactura. ",
         "image": "JuliaArgueta.jpg",
         "nationality": "guatemala"
     },
     {
         "name": "Sammy Arburola",
         "short": "",
-        "information": "",
+        "information": "La humana de Eins(Tin), cocino por hobby e iniciando en los deportes acuáticos."
+        + "Dev @ EstudioRelativo"
+        + "Miembro activo WordPressSanJosé y #WTM Ambassador",
         "image": "SammyArburola.jpg",
         "nationality": "guatemala"
     },
