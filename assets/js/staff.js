@@ -5,42 +5,79 @@ var staff = [
     {
         "name": "Ilse Alejandra González Estrada",
         "short": "",
-        "information": "",
+        "information": "Soy Ilse. Soy el cúmulo de experiencias y convivencias que he tenido a lo largo de mi vida."
+        + "Me encanta leer, soy un alma curiosa que siempre se hace preguntas de todo."
+        + "En el ambito academico estudie la Licenciatura en Diplomacia y Relaciones Inyernaciones, " 
+        + "actualmente soy coordinadora logística de cargamentos en Estados Unidos, también enseño Inglés,  y practico baile. ",
         "image": "IlseGonzalez.jpg",
         "nationality": "guatemala"
     },
     {
         "name": "Andrea Cabrera",
         "short": "",
-        "information": "",
+        "information": "Licenciada en Marketing con un MBA."
+        + "Cuenta con una especialización en emprendimiento social por la Pontificia Universidad Católica de Chile"
+        + "y una especialización en Derechos Humanos de la Mujer por la Universidad Austral de Argentina."
+        + "A inicios del 2019 fundó la organización de emprendimiento femenino, Wonder Woman Guatemala donde ha formado a más de 5000 mujeres en toda Guatemala"
+        + "con bases de emprendimiento, escalabilidad empresarial y liderazgo. Actualmente es la presidenta de la junta directiva."
+        + "En el 2020 desarrolló el programa Aurora que tiene por objetivo el promover oportunidades de desarrollo comunitario inclusivo"
+        + "y reducir la brecha de desigualdad y migración irregular."
+        + "Cuenta con una certificación en metodologías disruptivas por el Instituto Cinman de Israel y metodologías de Género por la OIT."
+        + "Forma parte de la coalición para el empoderamiento económico de las mujeres realizado por Onu Mujeres y el Ministerio de Economía."
+        + "En el 2021 fue galardonada por el gobierno de Guatemala como Mujer Protagonista por su labor social e integral con las mujeres"
+        + "y en el 2022 fue premiada como Líder Inspirador por la gremial de Coahes y Conferencistas de Guatemala."
+        + "Integra la mesa técnica nacional de empoderamiento económico femenino, donde lidera acciones para promover oportunidades para las mujeres en el país."
+        + "Dentro de los aliados estratégicos de la organización se encuentra el Ministerio de Economía, Onu Mujeres, secretarías públicas,"
+        + "red de centros comerciales más grande del país, bancos con presencia en la región, microfinancieras, medios de comunicación, entre otros.",
         "image": "AndreaCabrera.jpg",
         "nationality": "guatemala"
     },
     {
         "name": "Mariela Román Barrios",
         "short": "",
-        "information": "",
+        "information": "Educadora de profesión, con quince años de experiencia en educación virtual."
+        + "Catedrática universitaria en universidades nacionales e internacionales, auditora de calidad educativa, autora y tutora de cursos e-learning,"
+        + "directora por 14 años de Pre-Primaria y Primaria en un reconocido colegio de Guatemala, pero sobre todo educadora de corazón y de vocación."
+        + "Además, fue directora de UPANA Virtual, en Universidad Panamericana; actualmente se desempeña como Asesora para proyectos virtuales"
+        + "y forma parte del Área de Innovación Educativa de la Coordinadora General Sistema de Estudios de Postgrado (SEP), en Universidad de San Carlos de Guatemala."
+        + "Posee una Licenciatura en Ciencias de la Comunicación, por la Universidad Francisco Marroquín. Obtuvo la Maestría en Planeamiento y Gerencia Educativa y la Maestría en Dirección y Producción en e-Learning,"
+        + "ambas con distinción Suma Cum Laude en la Universidad Galileo. En la actualidad continúa con sus estudios de Doctorado en Educación, en la Universidad Internacional Iberoamericana, de México.",
         "image": "MarielaRoman.png",
         "nationality": "guatemala"
     },
     {
         "name": "Marylin Lisset Martínez Dávila",
         "short": "",
-        "information": "",
+        "information": "Licenciatura en Administración de Empresas, Especialista en Recursos Humanos con conocimientos en"
+        + "Legislación Laboral, Gestión y Dirección de Proyectos, Salud y seguridad ocupacional y docencia universitaria en diferentes disciplinas."
+        + "Competencias: liderazgo, resiliencia, comunicación asertiva, manejo y desarrollo de personal, toma de decisiones, trabajo en equipo,"
+        + "resolución de conflictos y cumplimiento de metas",
         "image": "MarylinMartinez.jpg",
         "nationality": "guatemala"
     },
     {
         "name": "Karine Odette Ávila Cofiño",
         "short": "",
-        "information": "",
+        "information": "Soy una estudiante de Ingeniería en Sistemas Digitales y Robótica del TEC de MONTERREY"
+        + "graduada con la estatuilla de Borrego por méritos en el extranjero."
+        + "Recibí clases de desarrollo web en Paris, cursos de Marketing en Bratislava, cursos de administración de empresas en Canadá, cursos de creatividad en Disney y Universal."
+        + "Cuento con una maestría en Emprendimiento de la Universidad de Salamanca" 
+        + "y una maestría doble de Formato Educativo y la Universidad de Cádiz en Administración de Empresas y Marketing."
+        + "Asimismo, trabajé en Boston dentro de IXL Center, una consultoría dedicada a la innovación. ",
         "image": "KarineAvila.jpg",
         "nationality": "guatemala"
     },
     {
         "name": "María Alejandra Fuentes Chinchilla",
         "short": "",
-        "information": "",
+        "information": "Nutricionista de profesión, amante de la salud y de las buenas vibras."
+        + " Inicie mi pasión con un espacio (movible) en una oficina de abogados atendiendo 3 pacientes por semana (con suerte!), "
+        + "la persistencia y pasión me hizo lograr 2 años asi y luego empezar a ver los frutos de mi esfuerzo,"
+        + "llegando a tener mi primer clinica en un espacio fijo (siempre en una oficina con abogados!)"
+        + "pero atendiendo en mi propio espacio con mis propios títulos colgados! Actualmente atiendo a mas de 40 pacientes por semana"
+        + "y creando retos mensuales con ventas en linea y a empresas como agexport y Bantrab! Soy creadora de diversos libros de recetas on Line,"
+        + "cofundadora de un programa de profesionales en pediatría 'creciendo juntos' y creadora de programas infantiles como de alimentacion complementaria"
+        + "y alergias intolerancias. Dando pasos agigantados hacia una sucursal que el otro año comienza funciones!",
         "image": "MariaFuentes.jpg",
         "nationality": "guatemala"
     },
