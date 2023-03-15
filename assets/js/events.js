@@ -112,7 +112,7 @@ var events = [
     {
         "name": "Sos la única dueña de tu futuro",
         "description": "",
-        "speaker": "Maria Alejandra Fuentes Chinchilla",
+        "speaker": "María Alejandra Fuentes Chinchilla",
         "day": "24",
         "time": "10:30",
         "place": "Track 3",
@@ -224,7 +224,7 @@ var events = [
     {
         "name": "Aprender para emprender",
         "description": "",
-        "speaker": "Ana Lucia Toledo",
+        "speaker": "Ana Lucía Toledo",
         "day": "24",
         "time": "12:45",
         "place": "Track 1",

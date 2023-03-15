@@ -132,21 +132,21 @@ var staff = [
         "nationality": "guatemala"
     },
     {
-        "name": "Maria José Bejarano",
+        "name": "María José Bejarano",
         "short": "",
         "information": "",
         "image": "default.png",
         "nationality": "guatemala"
     },
     {
-        "name": "Dilia Diaz",
+        "name": "Dilia Díaz",
         "short": "",
         "information": "",
         "image": "default.png",
         "nationality": "guatemala"
     },
     {
-        "name": "Sandra Lopez",
+        "name": "Sandra López",
         "short": "",
         "information": "",
         "image": "default.png",
@@ -184,7 +184,7 @@ var staff = [
     /* OTROS COLORES */
 
     {
-        "name": "Diana Gutierrez",
+        "name": "Diana Gutiérrez",
         "short": "",
         "information": "",
         "image": "DianaGutierrez.jpg",
