@@ -50,9 +50,9 @@ var events = [
         "tba": "0"
     },
     {
-        "name": "Cómo ser una verdadera líder",
+        "name": "Construyendo mi futuro en cada paso",
         "description": "",
-        "speaker": "Silvia Lucía Moya Morales",
+        "speaker": "Dalia Ester Azucena Quiroz De Leon",
         "day": "24",
         "time": "09:30",
         "place": "Track 3",
@@ -100,9 +100,9 @@ var events = [
         "tba": "0"
     },
     {
-        "name": "Construyendo mi futuro en cada paso",
+        "name": "Cómo ser una verdadera líder",
         "description": "",
-        "speaker": "Dalia Ester Azucena Quiroz de Leon",
+        "speaker": "Silvia Lucía Moya Morales",
         "day": "24",
         "time": "10:30",
         "place": "Track 2",
@@ -222,6 +222,16 @@ var events = [
         "tba": "0"
     },
     {
+        "name": "Cyberseguridad",
+        "description": "",
+        "speaker": "Meiling Ericelda Esteban García",
+        "day": "24",
+        "time": "12:30",
+        "place": "Track 3",
+        "subjects": [],
+        "tba": "0"
+    },
+    {
         "name": "Aprender para emprender",
         "description": "",
         "speaker": "Ana Lucía Toledo",
@@ -286,9 +296,9 @@ var events = [
         "tba": "0"
     },
     {
-        "name": "Liderazgo en nuevo siglo",
+        "name": "Plenas y armónicas",
         "description": "",
-        "speaker": "Karla Alejandra Miranda Vega",
+        "speaker": ["Karen Pineda", "Karen Cerón"],
         "day": "25",
         "time": "09:00",
         "place": "Track 2",
@@ -336,9 +346,9 @@ var events = [
         "tba": "0"
     },
     {
-        "name": "Construyendo un mundo más inclusivo una aplicación a la vez",
+        "name": "Intro a Design Systems 101",
         "description": "",
-        "speaker": "Cecilia Castillo",
+        "speaker": "Gaby Futch",
         "day": "25",
         "time": "10:30",
         "place": "Track 1",
@@ -398,9 +408,9 @@ var events = [
         "tba": "0"
     },
     {
-        "name": "Plenas y armónicas",
+        "name": "Liderazgo en nuevo siglo",
         "description": "",
-        "speaker": ["Karen Pineda", "Karen Cerón"],
+        "speaker": "Karla Alejandra Miranda Vega",
         "day": "25",
         "time": "12:00",
         "place": "Track 2",
@@ -418,9 +428,9 @@ var events = [
         "tba": "0"
     },
     {
-        "name": "Intro a Design Systems 101",
+        "name": "Construyendo un mundo más inclusivo una aplicación a la vez",
         "description": "",
-        "speaker": "Gaby Futch",
+        "speaker": "Cecilia Castillo",
         "day": "25",
         "time": "12:30",
         "place": "Track 2",
