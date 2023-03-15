@@ -1,20 +1,5 @@
 var staff = [
-<<<<<<< HEAD
-/*
-    {
-        "name": "",
-=======
-    /*{
-        "name": "Alicia Ejemplo",
->>>>>>> d1f1cd7a29bfb8757c88704cb936d5f51c5197a5
-        "short": "",
-        "information": "",
-        "image": "default.png",
-        "nationality": "guatemala"
-<<<<<<< HEAD
-    },
-*/
-    
+
     /* COLOR VERDE EN LISTADO */ 
 
     {
