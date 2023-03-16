@@ -189,9 +189,9 @@ var staff = [
     {
         "name": "Laura Gutierrez",
         "short": "",
-        "information": "",
-        "image": "default.png",
-        "nationality": "guatemala"
+        "information": "Analista de Datos con 7 años de experiencia aplicando la ciencia de datos en Desarrollo de Productos Digitales, Transformación Digital y Recursos Humanos. En los últimos 3 años se ha convertido en embajadora de #IamRemarkable, Women Techmakers y Women in Data Science, las cuales tienen un impacto directo sobre inclusión, equidad de género y tecnología. La meta de Laura es dar visibilidad y recursos a mujeres en tecnología, incentivar la participación y diversidad de esta industria en Nicaragua.",
+        "image": "LauraGutierrez.jpg",
+        "nationality": "nicaragua"
     },
     {
         "name": "Mary Moreno",
@@ -203,8 +203,8 @@ var staff = [
     {
         "name": "María José Bejarano",
         "short": "",
-        "information": "",
-        "image": "default.png",
+        "information": "Software Manager, con 16 años de experiencia en el área de tecnología, Ingeniera de sistemas con maestría en gestión de proyectos. Me encanta viajar, leer y la curiosidad me ha llevado a descubrir, que la tecnología, es una herramienta para servir a los demás.",
+        "image": "MajoBejarano.jpg",
         "nationality": "guatemala"
     },
     {
@@ -231,8 +231,8 @@ var staff = [
     {
         "name": "Cecilia Castillo",
         "short": "",
-        "information": "",
-        "image": "default.png",
+        "information": "Soy ingeniera de software en PayPal  actualmente trabajando como desarrolladora de iOS, WTM Ambassador, GDG Organizer. Algunos de los temas que me apasionan son: desarrollo móvil, especialmente Android e iOS, Machine Learning, fotografía, correr, triatlón, libros.",
+        "image": "CeciCastillo.jpg",
         "nationality": "guatemala"
     },
     {
@@ -442,6 +442,13 @@ var staff = [
         "information": "MSc en Ciencia de Datos. Universidad de Granada - España.\n\nGoogle Developer Expert in Machine Learning\n\nData Science Engineer Team Lead en Mojix\n\nDocente en cursos de Postgrado en materias de Data Science y Machine Learning.\n\nWomen in Data Science Ambassador hasta el año 2020\n\nTomé cursos de Machine Learning en Stanford - USA y en Cifar - Canadá",
         "image": "NathalyAlarcon.jpg",
         "nationality": "bolivia"
+    },
+    {
+        "name": "Mayra Rodríguez",
+        "short": "",
+        "information": "",
+        "image": "default.png",
+        "nationality": "guatemala"
     }
     
 ];
