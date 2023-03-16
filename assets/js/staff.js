@@ -255,73 +255,121 @@ var staff = [
     {
         "name": "Diana Gutiérrez",
         "short": "",
-        "information": "",
+        "information": "Ingeniera en informática y sistemas apasionada por adquirir y transmitir nuevo conocimiento."
+        + "Tengo más de diez años de experiencia en administración de bases de datos."
+        + "Catedrática universitaria. Experiencia en industria de seguros, banca y retail con empresas locales e internacionales."
+        + "Voluntaria en la comunidad Women Who Code GT. ",
         "image": "DianaGutierrez.jpg",
         "nationality": "guatemala"
     },
     {
         "name": "Silvia Lucía Moya Morales",
         "short": "",
-        "information": "",
+        "information": "Apasionada de la organización, la comunicación y el desarrollo humano."
+        + "Soy marketera por casualidad y techie por afición. Mi misión es empoderar mujeres y hacer que descubran sus talentos para desarrollarlos y alcanzar el éxito."
+        + "Desde mi posición como directora de cuentas en una agencia de publicidad regional busco dirigir a mi equipo con empatía y un sentido más humano.",
         "image": "SilviaMoya.jpg",
         "nationality": "guatemala"
     },
     {
         "name": "Dalia Ester Azucena Quiroz de Leon",
         "short": "",
-        "information": "",
+        "information": "Creci en una vivienda humilde con 1 hermano varon y 3 hermanas mujeres,"
+        + "Hija de Agustin Quiroz quien se desenvuelve en la fabricacion de equipos de cocina,"
+        + "y Amanda de Quiroz una mujer emprendedora. Desde muy peque'a tuve la dicha de que mi padre nos involucrara en su trabajo,"
+        + "dominando herramientas de la industria como pulidora, diferentes tipos de soldadoras, barreno y otros."
+        + "Con esa independencia y pasion por la industria inculcada, en el 2010 me inscribo a la Carrera de Tecnico En electricidad Industrial"
+        + "fecha en la que inicia mi recorrido de campo profesional dominado por hombres, solicito practicas en 2 empresas donde me rechazan por ser mujer,"
+        + "una tercera me acepta, fascinada por el area de Automatizacion industrial,"
+        + "inicio labores en año 2012 como electricista en el area de manteniento de una empresa, trabajo en montaje y cableado de proyectos externos a la empresa,"
+        + "dos an'os despues, inicio la aventura de trabajar como tecnica en control y montaje electrico en proyectos de automaticion en las industrias,"
+        + "trabajo por mi cuenta electricidad domiciliar durante 2 años, En 2016 ingreso como tecnica en ensablaje de tableros de control a la empresa"
+        + "en la que actualmente laboro, paso por varios areas de a la empresa hasta llegar a mi plaza actual, donde a mis 29 años me desenvuelvo como"
+        + "Gerente de proyectos de automatizacion industrial, prestando servicios a empresas reconocidas a nivel internacional de alimentos y bebidas, molienda,"
+        + "extractoras y otros tipos de industrias."
+        + "En mi tiempo libre manejo moto, escalo volcanes y lidero la confederacion internacional de mujeres Biker, CIMB Guatemala,"
+        + "la vision de la confederacion es mujeres que construyen mujeres, alentando a mujeres biker que no tengan miedo de vivir la libertad en una motocicleta.",
         "image": "DaliaQuiroz.jpg",
         "nationality": "guatemala"
     },
     {
         "name": "Jenbli Julissa Miranda Flores de Fuentes",
         "short": "",
-        "information": "",
+        "information": "Soy psicologa educativa y consejera comunitaria y escolar. Con amplia experiencia en docencia, orientacion vocacional,"
+        + "acompañamiento en toma de decisiones de carrera y desarrollo de habilidades socioemocionales."
+        + "Mis intereses incluyen la salud mental y el bienestar integral, el desarrollo y cuidado emocional y la formacion de valores."
+        + "Creo firmemente en el potencial de cada persona de ser mejor cada dia y de dejar huella en su paso por el mundo.",
         "image": "JenbliMiranda.jpg",
         "nationality": "guatemala"
     },
     {
         "name": "Melissa Flores-Gómez Fiallos de Belches",
         "short": "",
-        "information": "",
+        "information": "Soy una apasionada de la mejora continua y del ser humano en todas sus dimensiones,"
+        + "soy docente y poseo una maestría y un doctorado en dinámica humana y salud mental durante los últimos 18 años he acompañado y"
+        + "entrenado a miles de jóvenes para tener la vida que sueñan.",
         "image": "MelissaFlores.jpg",
         "nationality": "guatemala"
     },
     {
         "name": "Yadira Graciela Nuyens Canté de Callejas",
         "short": "",
-        "information": "",
+        "information": "Mi nombre es Yadira Nuyens, tengo 32 años, trabajo como Jefe de Categorías para Centroamérica en Bimbo de Centroamérica."
+        + "Estudié una Licenciatura en Administración de Sistemas Informáticos con especialización en Base de Datos,"
+        + "luego cursé la Maestría en Reingeniería y Tecnologías de Aseguramiento y luego un Post Grado en Gestión y Dirección de Proyectos."
+        + "Tengo 11 años de experiencia laboral, he trabajado en dos transnacionales y tuve la oportunidad de crear mi propio departamento de Category Management.",
         "image": "YadiraNuyens.jpg",
         "nationality": "guatemala"
     },
     {
         "name": "Marisol Catalán",
         "short": "",
-        "information": "",
+        "information": "Persona que le gusta ayudar  a emprendedores a realizar su proyecto a través de planes de negocios viables,"
+        + "motivada a la lectura de investigaciones científicas e innovación, con experiencia en el área financiera, estadística,"
+        + "marketing digital e inteligencia artificial aplicada a los negocios.",
         "image": "MarisolCatalan.jpg",
         "nationality": "guatemala"
     },
     {
         "name": "Katy Dayana Figueroa de Tock",
         "short": "",
-        "information": "",
+        "information": "Master en Sistemas Logísticos y Operaciones con especialización en Centros de Distribución."
+        + "Soy Graduada de Ingeniería Industrial con experiencia laboral de 12 años en empresas de retail, manufactura y servicios."
+        + "Especialista en Marketing y negocios digitales. Fundadora de Ingeniería Digital.",
         "image": "KatyFigueroa.png",
         "nationality": "guatemala"
     },
     {
         "name": "Ana Gabriela Pantoja",
         "short": "",
-        "information": "",
+        "information": "Hola, mi nombre es Gaby Pantoja, soy una chica normal que nació en un mundo extraordinario, el mundo de las motos."
+        + "Desde pequeña mi papa las amo, y para mí fué natural tenerlas en mi vida, primero era el hobbie de él y luego se convirtieron en mi mundo,"
+        + "vivo de ellas y me divierto con ellas. Sin embargo,  también vienen con muchos retos, desde ser una mujer empresaria en un mundo de hombres,"
+        + "hasta la lucha constante con superar el reto más difícil: vencerme a mi misma, a mis miedos, mis inseguridades y todo por encontrar el tesoro al"
+        + "final del arco iris. Las motos me han hecho más disciplinada, me han dado amigos inolvidables,"
+        + "experiencias únicas y la sensación que tengo una vida extraordinaria."
+        + "Es difícil poner en unas cuántas líneas lo que he vivido por las dos ruedas, desde un viaje extraordinario por Estados Unidos"
+        + "acompañada únicamente de una amiga (qué también ama las motos), hasta conocer a las personas que más admiro y que representan este bello deporte,"
+        + "visitas a circuitos de carrera fenomenales, ser capacitada por las mentes más brillantes de Europa anualmente, y traer a Guatemala los mejores"
+        + "y  más seguros productos del mundo , para que todos los que me acompañan en esta gran pasión, puedan disfrutarla durante mucho tiempo."
+        + "Con todo esto, siento que debo compartirle a todos de este maravilloso deporte y de cómo la moto, ¡es vida!",
         "image": "AnaPantoja.jpg",
         "nationality": "guatemala"
     },
     {
         "name": "América Ixlem Chen Sam",
         "short": "",
-        "information": "",
+        "information": "Ixlem Chen Sam es una mujer maya K’iche originaria de Cantel Quetzaltenango,"
+        + "Ingeniero Administrativo, Magister en Reingeniería y Tecnologías del Aseguramiento y cuenta también con un Postgrado en Gestión Aduanera de Universidad Galileo."
+        + "Es fundadora de Proyecto Sanik que busca mejorar la calidad educativa en el sector público,"
+        + "es reconocida como una de las 50 mujeres destacadas de Guatemala en el libro Entre Chapinas,"
+        + "actualmente es parte de las mujeres abriendo brecha en la ciencia en la segunda edición del libro Heroínas de la ciencia de SENACYT,"
+        + "fue ganadora del premio Nacional Liderazgo Joven en la categoría de educación por CONJUVE. ",
         "image": "AmericaChen.jpg",
         "nationality": "guatemala"
     },
+
+    /*Aquí terminé*/
     {
         "name": "Karla Alejandra Miranda Vega",
         "short": "",
