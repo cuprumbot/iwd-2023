@@ -197,7 +197,7 @@ var staff = [
         "name": "Mary Moreno",
         "short": "",
         "information": "",
-        "image": "default.png",
+        "image": "MaryMoreno.jpg",
         "nationality": "guatemala"
     },
     {
@@ -374,7 +374,7 @@ var staff = [
         "name": "Karla Alejandra Miranda Vega",
         "short": "",
         "information": "",
-        "image": "default.png",
+        "image": "KarlaMiranda.jpg",
         "nationality": "guatemala"
     },
     {
