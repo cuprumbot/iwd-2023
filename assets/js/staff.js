@@ -42,7 +42,7 @@ var staff = [
         + "y forma parte del Área de Innovación Educativa de la Coordinadora General Sistema de Estudios de Postgrado (SEP), en Universidad de San Carlos de Guatemala."
         + "Posee una Licenciatura en Ciencias de la Comunicación, por la Universidad Francisco Marroquín. Obtuvo la Maestría en Planeamiento y Gerencia Educativa y la Maestría en Dirección y Producción en e-Learning,"
         + "ambas con distinción Suma Cum Laude en la Universidad Galileo. En la actualidad continúa con sus estudios de Doctorado en Educación, en la Universidad Internacional Iberoamericana, de México.",
-        "image": "MarielaRoman.png",
+        "image": "MarielaRoman.jpg",
         "nationality": "guatemala"
     },
     {
@@ -336,7 +336,7 @@ var staff = [
         "information": "Master en Sistemas Logísticos y Operaciones con especialización en Centros de Distribución."
         + "Soy Graduada de Ingeniería Industrial con experiencia laboral de 12 años en empresas de retail, manufactura y servicios."
         + "Especialista en Marketing y negocios digitales. Fundadora de Ingeniería Digital.",
-        "image": "KatyFigueroa.png",
+        "image": "KatyFigueroa.jpg",
         "nationality": "guatemala"
     },
     {
