@@ -268,6 +268,8 @@ var staff = [
         "image": "SilviaMoya.jpg",
         "nationality": "guatemala"
     },
+
+    /*
     {
         "name": "Dalia Ester Azucena Quiroz De Leon",
         "short": "",
@@ -289,6 +291,9 @@ var staff = [
         "image": "DaliaQuiroz.jpg",
         "nationality": "guatemala"
     },
+    */
+
+    /*
     {
         "name": "Jenbli Julissa Miranda Flores de Fuentes",
         "short": "",
@@ -299,6 +304,8 @@ var staff = [
         "image": "JenbliMiranda.jpg",
         "nationality": "guatemala"
     },
+    */
+
     {
         "name": "Melissa Flores-Gómez Fiallos de Belches",
         "short": "",
@@ -336,6 +343,8 @@ var staff = [
         "image": "KatyFigueroa.jpg",
         "nationality": "guatemala"
     },
+
+    /*
     {
         "name": "Ana Gabriela Pantoja",
         "short": "",
@@ -353,6 +362,8 @@ var staff = [
         "image": "AnaPantoja.jpg",
         "nationality": "guatemala"
     },
+    */
+
     {
         "name": "América Ixlem Chen Sam",
         "short": "",
@@ -421,6 +432,8 @@ var staff = [
         "image": "SandraCastaneda.jpg",
         "nationality": "guatemala"
     },
+
+    /*
     {
         "name": "Janina Eunice Bonilla Smith",
         "short": "",
@@ -428,6 +441,7 @@ var staff = [
         "image": "JaninaBonilla.jpg",
         "nationality": "guatemala"
     },
+    */
 
     {
         "name": "Nathaly Alarcon",
@@ -441,6 +455,16 @@ var staff = [
         "short": "",
         "information": "",
         "image": "default.png",
+        "nationality": "guatemala"
+    },
+
+
+
+    {
+        "name": "Andrea Lara",
+        "short": "",
+        "information": " Ingeniera en Electrónica por Universidad Galileo, Magister en Ingeniería Biomédica por la Universidad de Luebeck, Alemania, y Candidata a Doctorado en Ingeniería Biomédica por la Universidad Tecnológica de Graz en Austria.\n\nCon experiencia en el área de tecnología médica, Andrea se ha especializado en el diseño y desarrollo software médico, específicamente, en herramientas de apoyo diagnóstico basadas en imágenes médicas e Inteligencia Artificial.\n\nTrabajó como investigadora en el Instituto alemán Fraunhofer IBMT, además ha apoyado en proyectos de desarrollo de tecnología médica en colaboración con Universidades de Alemania, Brasil y Austria.\n\nActualmente es Directora del Área de Ingeniería Biomédica en Universidad Galileo, también es directora del Laboratorio de Investigación Biomédica, BiomedLab.",
+        "image": "AndreaLara.jpg",
         "nationality": "guatemala"
     }
     

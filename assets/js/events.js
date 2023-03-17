@@ -29,13 +29,24 @@ var events = [
         "subjects": [],
         "tba": "0"
     },
+    
+    {
+        "name": "Una carrera en STEM",
+        "description": "",
+        "speaker": "Andrea Lara",
+        "day": "24",
+        "time": "09:30",
+        "place": "Track 1",
+        "subjects": [],
+        "tba": "0"
+    },
     {
         "name": "Ciberseguridad, una oportunidad para todos",
         "description": "",
         "speaker": ["Lucila Barrios", "Verónica Klee"],
         "day": "24",
         "time": "09:30",
-        "place": "Track 1",
+        "place": "Track 2",
         "subjects": [],
         "tba": "0"
     },
@@ -45,17 +56,18 @@ var events = [
         "speaker": "Diana Gutiérrez",
         "day": "24",
         "time": "09:30",
-        "place": "Track 2",
+        "place": "Track 3",
         "subjects": [],
         "tba": "0"
     },
+    
     {
-        "name": "Construyendo mi futuro en cada paso",
+        "name": "¿Cómo ser un estudiante virtual exitoso?",
         "description": "",
-        "speaker": "Dalia Ester Azucena Quiroz De Leon",
+        "speaker": "Mariela Román Barrios",
         "day": "24",
-        "time": "09:30",
-        "place": "Track 3",
+        "time": "10:00",
+        "place": "Track 1",
         "subjects": [],
         "tba": "0"
     },
@@ -65,20 +77,11 @@ var events = [
         "speaker": "Andrea Cabrera",
         "day": "24",
         "time": "10:00",
-        "place": "Track 1",
-        "subjects": [],
-        "tba": "0"
-    },
-    {
-        "name": "¿Cómo ser un estudiante virtual exitoso?",
-        "description": "",
-        "speaker": "Mariela Román Barrios",
-        "day": "24",
-        "time": "10:00",
         "place": "Track 2",
         "subjects": [],
         "tba": "0"
     },
+
     {
         "name": "\"Yo Puedo Con Todo\"",
         "description": "",
@@ -89,6 +92,7 @@ var events = [
         "subjects": [],
         "tba": "0"
     },
+
     {
         "name": "Innovando fuera de tu zona de confort",
         "description": "",
@@ -161,6 +165,7 @@ var events = [
         "subjects": [],
         "tba": "0"
     },
+
     {
         "name": "Emprendimiento social y Sheva",
         "description": "",
@@ -168,16 +173,6 @@ var events = [
         "day": "24",
         "time": "12:00",
         "place": "Track 1",
-        "subjects": [],
-        "tba": "0"
-    },
-    {
-        "name": "Tomar decisiones para trascender",
-        "description": "",
-        "speaker": "Jenbli Julissa Miranda Flores de Fuentes",
-        "day": "24",
-        "time": "12:00",
-        "place": "Track 2",
         "subjects": [],
         "tba": "0"
     },
@@ -251,16 +246,6 @@ var events = [
         "subjects": [],
         "tba": "0"
     },
-    {
-        "name": "Biker chicks... ¿quién dijo miedo?",
-        "description": "",
-        "speaker": "Ana Gabriela Pantoja",
-        "day": "24",
-        "time": "12:45",
-        "place": "Track 3",
-        "subjects": [],
-        "tba": "0"
-    },
 
     
     /* SÁBADO */
@@ -285,6 +270,7 @@ var events = [
         "subjects": [],
         "tba": "0"
     },
+
     {
         "name": "Liderazgo que impacta",
         "description": "",
@@ -305,6 +291,7 @@ var events = [
         "subjects": [],
         "tba": "0"
     },
+
     {
         "name": "Fintech: transformación digital en las finanzas",
         "description": "",
@@ -325,6 +312,7 @@ var events = [
         "subjects": [],
         "tba": "0"
     },
+
     {
         "name": "Liderazgo de las mujeres en pandemia COVID-19",
         "description": "",
@@ -345,6 +333,7 @@ var events = [
         "subjects": [],
         "tba": "0"
     },
+
     {
         "name": "Intro a Design Systems 101",
         "description": "",
@@ -388,15 +377,16 @@ var events = [
         "tba": "0"
     },
     {
-        "name": "Bailando Bajo la Tormenta Aprendí a ser Feliz",
+        "name": "Construyendo un mundo más inclusivo una aplicación a la vez",
         "description": "",
-        "speaker": "Luisa Janet España Oliva",
+        "speaker": "Cecilia Castillo",
         "day": "25",
         "time": "11:30",
-        "place": "Track 1",
+        "place": "Track 2",
         "subjects": [],
         "tba": "0"
     },
+
     {
         "name": "Identidad Digital ¿Qué es y cómo puedes protegerte?",
         "description": "",
@@ -427,16 +417,7 @@ var events = [
         "subjects": [],
         "tba": "0"
     },
-    {
-        "name": "Construyendo un mundo más inclusivo una aplicación a la vez",
-        "description": "",
-        "speaker": "Cecilia Castillo",
-        "day": "25",
-        "time": "12:30",
-        "place": "Track 2",
-        "subjects": [],
-        "tba": "0"
-    },
+
     {
         "name": "La importancia de la transformación digital en las empresas",
         "description": "",
@@ -448,32 +429,12 @@ var events = [
         "tba": "0"
     },
     {
-        "name": "Cyberseguridad",
-        "description": "",
-        "speaker": "Meiling Ericelda Esteban García",
-        "day": "25",
-        "time": "13:00",
-        "place": "Track 2",
-        "subjects": [],
-        "tba": "0"
-    },
-    {
         "name": "Atrévete a soñar",
         "description": "",
         "speaker": "Sandra Judith Castañeda García",
         "day": "25",
-        "time": "13:15",
+        "time": "13:00",
         "place": "Track 1",
-        "subjects": [],
-        "tba": "0"
-    },
-    {
-        "name": "Las mujeres somos las más beneficiadas con la inteligencia artificial",
-        "description": "",
-        "speaker": "Janina Eunice Bonilla Smith",
-        "day": "25",
-        "time": "13:15",
-        "place": "Track 2",
         "subjects": [],
         "tba": "0"
     }
