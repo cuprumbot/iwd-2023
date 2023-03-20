@@ -209,6 +209,7 @@ var staff = [
         "image": "DiliaDiaz.jpg",
         "nationality": "guatemala"
     },
+    /*
     {
         "name": "Sandra López",
         "short": "",
@@ -216,6 +217,7 @@ var staff = [
         "image": "default.png",
         "nationality": "guatemala"
     },
+    */
     {
         "name": "Gaby Gamas",
         "short": "",

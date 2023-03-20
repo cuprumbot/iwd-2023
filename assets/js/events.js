@@ -196,6 +196,7 @@ var events = [
         "subjects": [],
         "tba": "0"
     },
+    /*
     {
         "name": "No hay límites ni género para hacer arte con el cuero",
         "description": "",
@@ -206,6 +207,7 @@ var events = [
         "subjects": [],
         "tba": "0"
     },
+    */
     {
         "name": "Rompiendo los límites y paradigmas de una mujer jóven en una transnacional",
         "description": "",
