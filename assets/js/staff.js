@@ -172,11 +172,9 @@ var staff = [
         "nationality": "guatemala"
     },
     {
-        "name": "Sammy Arburola",
+        "name": "Samantha Arburola",
         "short": "",
-        "information": "La humana de Eins(Tin), cocino por hobby e iniciando en los deportes acuáticos."
-        + " Dev @ EstudioRelativo"
-        + " Miembro activo WordPressSanJosé y #WTM Ambassador",
+        "information": "La humana de Eins(Tin), cocino por hobby e iniciando en los deportes acuáticos.\n\nDev @ EstudioRelativo.\n\nMiembro activo WordPressSanJosé y #WTM Ambassador",
         "image": "SammyArburola.jpg",
         "nationality": "costa rica"
     },
@@ -383,6 +381,8 @@ var staff = [
         "image": "KarlaMiranda.jpg",
         "nationality": "guatemala"
     },
+
+    /*
     {
         "name": "Luisa Janet España Oliva",
         "short": "",
@@ -390,6 +390,8 @@ var staff = [
         "image": "LuisaEspana.jpg",
         "nationality": "guatemala"
     },
+    */
+    
     {
         "name": "Karen Pineda",
         "short": "",

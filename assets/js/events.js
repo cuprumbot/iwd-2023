@@ -177,6 +177,16 @@ var events = [
         "tba": "0"
     },
     {
+        "name": "Kit de inicio en STEAM",
+        "description": "",
+        "speaker": "Samantha Arburola",
+        "day": "24",
+        "time": "12:00",
+        "place": "Track 2",
+        "subjects": [],
+        "tba": "0"
+    },
+    {
         "name": "20 formas de sentirte empoderada",
         "description": "",
         "speaker": "Melissa Flores-Gómez Fiallos de Belches",
@@ -263,7 +273,7 @@ var events = [
     {
         "name": "Prototipado 101",
         "description": "",
-        "speaker": "Sammy Arburola",
+        "speaker": "Samantha Arburola",
         "day": "25",
         "time": "08:30",
         "place": "Track 2",
@@ -423,8 +433,8 @@ var events = [
         "description": "",
         "speaker": "Wendy Magaly Túnchez Pérez",
         "day": "25",
-        "time": "13:00",
-        "place": "Track 1",
+        "time": "12:30",
+        "place": "Track 2",
         "subjects": [],
         "tba": "0"
     },
@@ -433,8 +443,8 @@ var events = [
         "description": "",
         "speaker": "Sandra Judith Castañeda García",
         "day": "25",
-        "time": "13:00",
-        "place": "Track 1",
+        "time": "12:45",
+        "place": "Track 2",
         "subjects": [],
         "tba": "0"
     }
