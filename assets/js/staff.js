@@ -455,9 +455,9 @@ var staff = [
     {
         "name": "Mayra Rodríguez",
         "short": "",
-        "information": "",
-        "image": "default.png",
-        "nationality": "guatemala"
+        "information": "Mayra Rodríguez is a Computer Engineer graduated from Fermín Toro University in Cabudare, Edo. Lara - Venezuela. She has been developing web and mobile applications mainly for more than 5 years the Angular technology. She feels passionate about learning, sharing her knowledge, empowerment feminine and of course, technology. Mayra is the first Venezuelan GDE for Angular category :), she also is Women Techmakers Ambassador and Co-Organizer in Flutter Colombia. Currently is working as a Senior Fullstack Engineer at Terminal and as a full-time mother of a beautiful kid named Thomas.",
+        "image": "MayraRodriguez.jpg",
+        "nationality": "venezuela"
     },
 
 
