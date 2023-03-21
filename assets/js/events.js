@@ -239,6 +239,16 @@ var events = [
         "tba": "0"
     },
     {
+        "name": "Biker chicks... ¿quién dijo miedo?",
+        "description": "",
+        "speaker": "Ana Gabriela Pantoja",
+        "day": "24",
+        "time": "12:45",
+        "place": "Track 3",
+        "subjects": [],
+        "tba": "0"
+    },
+    {
         "name": "Aprender para emprender",
         "description": "",
         "speaker": "Ana Lucía Toledo",

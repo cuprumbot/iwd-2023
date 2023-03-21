@@ -344,7 +344,6 @@ var staff = [
         "nationality": "guatemala"
     },
 
-    /*
     {
         "name": "Ana Gabriela Pantoja",
         "short": "",
@@ -362,7 +361,6 @@ var staff = [
         "image": "AnaPantoja.jpg",
         "nationality": "guatemala"
     },
-    */
 
     {
         "name": "América Ixlem Chen Sam",
