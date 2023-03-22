@@ -65,7 +65,7 @@ var staff = [
         + " y una maestría doble de Formato Educativo y la Universidad de Cádiz en Administración de Empresas y Marketing."
         + " Asimismo, trabajé en Boston dentro de IXL Center, una consultoría dedicada a la innovación. ",
         "image": "KarineAvila.jpg",
-        "nationality": "guatemala"
+        "nationality": "mexico"
     },
     {
         "name": "María Alejandra Fuentes Chinchilla",
