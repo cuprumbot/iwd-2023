@@ -69,8 +69,10 @@
 
                 <span class="title-menu">
                     <a id="staff-access" class="btn-menu c3">Conferencistas</a>
-                    <a id="agenda-access-24" class="btn-menu c3">Agenda Viernes</a>
+                    <a id="agenda-access" class="btn-menu c3">Agenda</a>
+                    <!--
                     <a id="agenda-access-25" class="btn-menu c3">Agenda Sábado</a>
+                    -->
                     <a id="home-access" class="btn-menu c4">Más información</a>
                     <a id="conduct-access" class="btn-menu c4">Código de Conducta</a>
                     <a id="register-access" class="btn-menu c1">Registro</a>
@@ -111,6 +113,8 @@
 
     var WIDTH_RESIZE = 765;
     var TABLET_SIZE = 768;
+
+    var chosenDay = 25;
 
     var logos = ['assets/img/logo-galileo.png', 'assets/img/logo-wtm.jpg', 'assets/img/logo-innovation-lab.png', 'assets/img/logo-gdg-guatemala.png', 'assets/img/logo-gdg-cloud.png'];
 
@@ -218,11 +222,8 @@
 
         var html = "";
             html += '<span class="agenda-container">';
-            //html += '<p class="helper">¿Asististe a la charla de Erika Luna (Platzi)? Puedes contactarnos a innovationlabug@gmail.com</p>'
-            html += '<span class="subtitle">';
-            
-                /* FIND ME - agenda */
-            
+ 
+            html += '<span class="subtitle">';            
             html += 'Viernes 24 de marzo';
             html += '</span>';
             html += '<p>';
@@ -250,7 +251,6 @@
         html += '</span>';
         html += '</span>';
         html += '<span class="time-selection">';
-
 
         /* Day/Night */
         html += '<span n="1" class="time-selector selected">';
@@ -297,10 +297,23 @@
                     oldMinutes = strMinutes;
                 }
 
+                /*
                 if(oldDay != event.day){
                     if(separationCount > 0) html += '</span>';
                     separationCount++;
                     html += (separationCount == 1)? `<span n="${separationCount}" class="day-card shown">` : `<span n="${separationCount}" class="day-card">`;
+                    html += '<span class="event-date">';
+                    if(event.day == 24) html += 'Viernes, 24 de marzo';
+                    else if(event.day == 25) html += 'Sábado, 25 de marzo';
+                    html += '</span>';
+                    oldDay = event.day;
+                }
+                */
+
+                if(oldDay != event.day){
+                    if(separationCount > 0) html += '</span>';
+                    separationCount++;
+                    html += (event.day == chosenDay)? `<span n="${separationCount}" class="day-card shown">` : `<span n="${separationCount}" class="day-card">`;
                     html += '<span class="event-date">';
                     if(event.day == 24) html += 'Viernes, 24 de marzo';
                     else if(event.day == 25) html += 'Sábado, 25 de marzo';
@@ -1409,10 +1422,12 @@
                 generateAgenda();
             } else if (hash == 'agenda24' || hash == 'a24') {
                 hideIndex();
-                generateAgenda24();
+                chosenDay = 24;
+                generateAgenda();
             } else if (hash == 'agenda25' || hash == 'a25') {
                 hideIndex();
-                generateAgenda25();
+                chosenDay = 25;
+                generateAgenda();
             } else if (hash == 'conferencistas' || hash == 'c') {
                 hideIndex();
                 generateStaff();
