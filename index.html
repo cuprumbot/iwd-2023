@@ -243,10 +243,10 @@
         var oldMinutes = '61';
         
         html += '<span class="day-selection">';
-        html += '<span n="1" class="day-selector">';
+        html += (chosenDay == 24) ? '<span n="1" class="day-selector selected">' : '<span n="1" class="day-selector">';
         html += 'Viernes 24'
         html += '</span>';
-        html += '<span n="2" class="day-selector selected">';
+        html += (chosenDay == 25) ? '<span n="2" class="day-selector selected">' : '<span n="1" class="day-selector">';
         html += 'Sábado 25'
         html += '</span>';
         html += '</span>';
