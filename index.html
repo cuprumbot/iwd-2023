@@ -114,8 +114,6 @@
     var WIDTH_RESIZE = 765;
     var TABLET_SIZE = 768;
 
-    var chosenDay = 25;
-
     var logos = ['assets/img/logo-galileo.png', 'assets/img/logo-wtm.jpg', 'assets/img/logo-innovation-lab.png', 'assets/img/logo-gdg-guatemala.png', 'assets/img/logo-gdg-cloud.png'];
 
     function generateHome(){
@@ -214,7 +212,7 @@
         element.css('z-index', '1');
     }
 
-    function generateAgenda(){
+    function generateAgenda(chosenDay){
         var actualDay = 1;
         var separationCount = 0;
         var night = false;
@@ -921,15 +919,15 @@
                 generateRegister();
             } else if (hash == 'agenda' || hash == 'a') {
                 hideIndex();
-                generateAgenda();
+                generateAgenda(24);
             } else if (hash == 'agenda24' || hash == 'a24') {
                 chosenDay = 24;
                 hideIndex();
-                generateAgenda();
+                generateAgenda(24);
             } else if (hash == 'agenda25' || hash == 'a25') {
                 chosenDay = 25;
                 hideIndex();
-                generateAgenda();
+                generateAgenda(25);
             } else if (hash == 'conferencistas' || hash == 'c') {
                 hideIndex();
                 generateStaff();
@@ -963,7 +961,7 @@
                         generateStaff();
                     }break;
                     case 'agenda-access':{
-                        generateAgenda();
+                        generateAgenda(24);
                     }break;
                     case 'place-access':{
                         $('#dynamic-information').css('padding', '0');
