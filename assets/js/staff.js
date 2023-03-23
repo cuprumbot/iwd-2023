@@ -468,7 +468,7 @@ var staff = [
         "nationality": "guatemala"
     },
     {
-        "name": "Ana Lucía Chan",
+        "name": "Ana Chan",
         "short": "",
         "information": "Ana Chan cuenta con una Maestría en Derecho Internacional de Empresa por parte de la Pontificia Universidad Católica de Chile, estudios en Comunicación Empresarial y diplomado de Mediación y Resolución de Conflictos. Se ha desempeñado como presidenta gremial de ventas al detalle en la Cámara de Comercio de Guatemala, así como presidenta de la Cámara de Comercio e Industria Guatemalteco Mexicana. Actualmente es la Secretaria Nacional de Ciencia y Tecnología de Guatemala.",
         "image": "AnaChan.jpg",
