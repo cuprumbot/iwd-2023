@@ -460,14 +460,18 @@ var staff = [
         "nationality": "venezuela"
     },
 
-
-
     {
         "name": "Andrea Lara",
         "short": "",
         "information": " Ingeniera en Electrónica por Universidad Galileo, Magister en Ingeniería Biomédica por la Universidad de Luebeck, Alemania, y Candidata a Doctorado en Ingeniería Biomédica por la Universidad Tecnológica de Graz en Austria.\n\nCon experiencia en el área de tecnología médica, Andrea se ha especializado en el diseño y desarrollo software médico, específicamente, en herramientas de apoyo diagnóstico basadas en imágenes médicas e Inteligencia Artificial.\n\nTrabajó como investigadora en el Instituto alemán Fraunhofer IBMT, además ha apoyado en proyectos de desarrollo de tecnología médica en colaboración con Universidades de Alemania, Brasil y Austria.\n\nActualmente es Directora del Área de Ingeniería Biomédica en Universidad Galileo, también es directora del Laboratorio de Investigación Biomédica, BiomedLab.",
         "image": "AndreaLara.jpg",
         "nationality": "guatemala"
-    }
-    
+    },
+    {
+        "name": "Ana Lucía Chan",
+        "short": "",
+        "information": "Secretaria Nacional de Ciencia y Tecnología",
+        "image": "AnaChan.jpg",
+        "nationality": "guatemala"
+    }    
 ];

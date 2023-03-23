@@ -450,11 +450,20 @@ nav {
         margin-right: 6px;
         font-size: 18px; }
 
+  .dynamic-expanded-information .section-body {
+    display: block;
+    overflow-y: scroll;
+  }
+  .vertical-spacer {
+    height: 150px;
+  }
+
   .dynamic-expanded-information .section-body .staff-expanded-card {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    overflow-y: scroll;   /* find me */
     margin: 0 15px; }
     .dynamic-expanded-information .section-body .staff-expanded-card .staff-image {
       position: relative;

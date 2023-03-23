@@ -609,9 +609,11 @@
                 html += '</span>';
             }
         });
-        html += '</span>';
-        html += '</span>';
 
+        html += '<div class="vertical-spacer"></div>';
+
+        html += '</span>';
+        html += '</span>';
         html += '</span>';
 
         element.find('.section-body').html(html);
@@ -804,8 +806,6 @@
         var element = $('#dynamic-information');
         var html = '';
         
-        /* FIND ME */
-
         html += '<center><h3>Viernes 24 de marzo - Universidad Galileo</h3></center>'
         html += '<span class="map-container">';
         html += '<iframe width="500" height="500" frameborder="0" src="https://maps.google.com/maps?q=universidad%20galileo&t=&z=17&ie=UTF8&iwloc=&output=embed" allowfullscreen></iframe>';
@@ -814,7 +814,6 @@
         html += '<span class="map-container">';
         html += '<iframe width="500" height="500" frameborder="0" src="https://maps.google.com/maps?q=universidad%20galileo&t=&z=17&ie=UTF8&iwloc=&output=embed" allowfullscreen></iframe>';
         html += '</span>';
-
 
         element.find('.section-body').html(html);
 
