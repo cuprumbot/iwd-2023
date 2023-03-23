@@ -1,4 +1,4 @@
 config = {
     'time': 'day',
-    'day': '10'
+    'day': '25'
 };
