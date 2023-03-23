@@ -5,7 +5,7 @@ var events = [
         "speaker": "Laura Gutierrez",
         "day": "24",
         "time": "09:00",
-        "place": "Track 1",
+        "place": "Track 1 - Salón 401",
         "subjects": [],
         "tba": "0"
     },
@@ -15,7 +15,7 @@ var events = [
         "speaker": "Mary Moreno",
         "day": "24",
         "time": "09:00",
-        "place": "Track 2",
+        "place": "Track 2 - Salón 511",
         "subjects": [],
         "tba": "0"
     },
@@ -25,7 +25,7 @@ var events = [
         "speaker": "Ilse Alejandra González Estrada",
         "day": "24",
         "time": "09:00",
-        "place": "Track 3",
+        "place": "Track 3 - Salón 410",
         "subjects": [],
         "tba": "0"
     },
@@ -36,7 +36,7 @@ var events = [
         "speaker": "Andrea Lara",
         "day": "24",
         "time": "09:30",
-        "place": "Track 1",
+        "place": "Track 1 - Salón 401",
         "subjects": [],
         "tba": "0"
     },
@@ -46,7 +46,7 @@ var events = [
         "speaker": ["Lucila Barrios", "Verónica Klee"],
         "day": "24",
         "time": "09:30",
-        "place": "Track 2",
+        "place": "Track 2 - Salón 511",
         "subjects": [],
         "tba": "0"
     },
@@ -56,7 +56,7 @@ var events = [
         "speaker": "Diana Gutiérrez",
         "day": "24",
         "time": "09:30",
-        "place": "Track 3",
+        "place": "Track 3 - Salón 410",
         "subjects": [],
         "tba": "0"
     },
@@ -67,7 +67,7 @@ var events = [
         "speaker": "Mariela Román Barrios",
         "day": "24",
         "time": "10:00",
-        "place": "Track 1",
+        "place": "Track 1 - Salón 401",
         "subjects": [],
         "tba": "0"
     },
@@ -77,7 +77,7 @@ var events = [
         "speaker": "Andrea Cabrera",
         "day": "24",
         "time": "10:00",
-        "place": "Track 2",
+        "place": "Track 2 - Salón 511",
         "subjects": [],
         "tba": "0"
     },
@@ -88,7 +88,7 @@ var events = [
         "speaker": "Marylin Lisset Martínez Dávila",
         "day": "24",
         "time": "10:00",
-        "place": "Track 3",
+        "place": "Track 3 - Salón 410",
         "subjects": [],
         "tba": "0"
     },
@@ -99,7 +99,7 @@ var events = [
         "speaker": "Karine Odette Ávila Cofiño",
         "day": "24",
         "time": "10:30",
-        "place": "Track 1",
+        "place": "Track 1 - Salón 401",
         "subjects": [],
         "tba": "0"
     },
@@ -109,7 +109,7 @@ var events = [
         "speaker": "Silvia Lucía Moya Morales",
         "day": "24",
         "time": "10:30",
-        "place": "Track 2",
+        "place": "Track 2 - Salón 511",
         "subjects": [],
         "tba": "0"
     },
@@ -119,7 +119,7 @@ var events = [
         "speaker": "María Alejandra Fuentes Chinchilla",
         "day": "24",
         "time": "10:30",
-        "place": "Track 3",
+        "place": "Track 3 - Salón 410",
         "subjects": [],
         "tba": "0"
     },
@@ -152,7 +152,7 @@ var events = [
         "speaker": "María José Bejarano",
         "day": "24",
         "time": "11:30",
-        "place": "Track 1",
+        "place": "Track 1 - Salón 401",
         "subjects": [],
         "tba": "0"
     },
@@ -162,7 +162,7 @@ var events = [
         "speaker": "Dilia Díaz",
         "day": "24",
         "time": "11:30",
-        "place": "Track 2",
+        "place": "Track 2 - Salón 511",
         "subjects": [],
         "tba": "0"
     },
@@ -172,7 +172,7 @@ var events = [
         "speaker": "Lissy Amador Sazo",
         "day": "24",
         "time": "11:30",
-        "place": "Track 3",
+        "place": "Track 3 - Salón 410",
         "subjects": [],
         "tba": "0"
     },
@@ -183,7 +183,7 @@ var events = [
         "speaker": "Marisabel Ruiz",
         "day": "24",
         "time": "12:00",
-        "place": "Track 1",
+        "place": "Track 1 - Salón 401",
         "subjects": [],
         "tba": "0"
     },
@@ -193,7 +193,7 @@ var events = [
         "speaker": "Samantha Arburola",
         "day": "24",
         "time": "12:00",
-        "place": "Track 2",
+        "place": "Track 2 - Salón 511",
         "subjects": [],
         "tba": "0"
     },
@@ -203,7 +203,7 @@ var events = [
         "speaker": "Melissa Flores-Gómez Fiallos de Belches",
         "day": "24",
         "time": "12:00",
-        "place": "Track 3",
+        "place": "Track 3 - Salón 410",
         "subjects": [],
         "tba": "0"
     },
@@ -214,7 +214,7 @@ var events = [
         "speaker": "Sandra López",
         "day": "24",
         "time": "12:15",
-        "place": "Track 1",
+        "place": "Track 1 - Salón 401",
         "subjects": [],
         "tba": "0"
     },
@@ -225,7 +225,7 @@ var events = [
         "speaker": "Yadira Graciela Nuyens Canté de Callejas",
         "day": "24",
         "time": "12:30",
-        "place": "Track 1",
+        "place": "Track 1 - Salón 401",
         "subjects": [],
         "tba": "0"
     },
@@ -235,7 +235,7 @@ var events = [
         "speaker": "Marisol Catalán",
         "day": "24",
         "time": "12:30",
-        "place": "Track 2",
+        "place": "Track 2 - Salón 511",
         "subjects": [],
         "tba": "0"
     },
@@ -245,7 +245,7 @@ var events = [
         "speaker": "Meiling Ericelda Esteban García",
         "day": "24",
         "time": "12:30",
-        "place": "Track 3",
+        "place": "Track 3 - Salón 410",
         "subjects": [],
         "tba": "0"
     },
@@ -256,7 +256,7 @@ var events = [
         "speaker": "Ana Lucía Toledo",
         "day": "24",
         "time": "12:45",
-        "place": "Track 1",
+        "place": "Track 1 - Salón 401",
         "subjects": [],
         "tba": "0"
     },
@@ -266,7 +266,7 @@ var events = [
         "speaker": "Katy Dayana Figueroa de Tock",
         "day": "24",
         "time": "12:45",
-        "place": "Track 2",
+        "place": "Track 2 - Salón 511",
         "subjects": [],
         "tba": "0"
     },
@@ -276,7 +276,7 @@ var events = [
         "speaker": "Ana Gabriela Pantoja",
         "day": "24",
         "time": "12:45",
-        "place": "Track 3",
+        "place": "Track 3 - Salón 410",
         "subjects": [],
         "tba": "0"
     },
@@ -290,7 +290,7 @@ var events = [
         "speaker": "Nathaly Alarcon",
         "day": "25",
         "time": "08:30",
-        "place": "Track 1",
+        "place": "Track 1 - Salón 401",
         "subjects": [],
         "tba": "0"
     },
@@ -300,7 +300,7 @@ var events = [
         "speaker": "Samantha Arburola",
         "day": "25",
         "time": "08:30",
-        "place": "Track 2",
+        "place": "Track 2 - Salón 511",
         "subjects": [],
         "tba": "0"
     },
@@ -311,7 +311,7 @@ var events = [
         "speaker": "América Ixlem Chen Sam",
         "day": "25",
         "time": "09:00",
-        "place": "Track 1",
+        "place": "Track 1 - Salón 401",
         "subjects": [],
         "tba": "0"
     },
@@ -321,7 +321,7 @@ var events = [
         "speaker": ["Karen Pineda", "Karen Cerón"],
         "day": "25",
         "time": "09:00",
-        "place": "Track 2",
+        "place": "Track 2 - Salón 511",
         "subjects": [],
         "tba": "0"
     },
@@ -332,7 +332,7 @@ var events = [
         "speaker": "Adriana Lizzeth Pinto Agustín",
         "day": "25",
         "time": "09:30",
-        "place": "Track 1",
+        "place": "Track 1 - Salón 401",
         "subjects": [],
         "tba": "0"
     },
@@ -342,7 +342,7 @@ var events = [
         "speaker": "Guisela Margarita Estrada Guerra",
         "day": "25",
         "time": "09:30",
-        "place": "Track 2",
+        "place": "Track 2 - Salón 511",
         "subjects": [],
         "tba": "0"
     },
@@ -353,7 +353,7 @@ var events = [
         "speaker": "Nancy Virginia Sandoval Paiz",
         "day": "25",
         "time": "10:00",
-        "place": "Track 1",
+        "place": "Track 1 - Salón 401",
         "subjects": [],
         "tba": "0"
     },
@@ -363,7 +363,7 @@ var events = [
         "speaker": "Gaby Gamas",
         "day": "25",
         "time": "10:00",
-        "place": "Track 2",
+        "place": "Track 2 - Salón 511",
         "subjects": [],
         "tba": "0"
     },
@@ -374,7 +374,7 @@ var events = [
         "speaker": "Gaby Futch",
         "day": "25",
         "time": "10:30",
-        "place": "Track 1",
+        "place": "Track 1 - Salón 401",
         "subjects": [],
         "tba": "0"
     },
@@ -384,7 +384,7 @@ var events = [
         "speaker": "Marcela Ambrosio",
         "day": "25",
         "time": "10:30",
-        "place": "Track 1",
+        "place": "Track 1 - Salón 401",
         "subjects": [],
         "tba": "0"
     },
@@ -406,7 +406,7 @@ var events = [
         "speaker": "Andrea Mazariegos",
         "day": "25",
         "time": "11:30",
-        "place": "Track 1",
+        "place": "Track 1 - Salón 401",
         "subjects": [],
         "tba": "0"
     },
@@ -416,7 +416,7 @@ var events = [
         "speaker": "Cecilia Castillo",
         "day": "25",
         "time": "11:30",
-        "place": "Track 2",
+        "place": "Track 2 - Salón 511",
         "subjects": [],
         "tba": "0"
     },
@@ -427,7 +427,7 @@ var events = [
         "speaker": "Julia Marielos Argueta Revolorio",
         "day": "25",
         "time": "12:00",
-        "place": "Track 1",
+        "place": "Track 1 - Salón 401",
         "subjects": [],
         "tba": "0"
     },
@@ -437,7 +437,7 @@ var events = [
         "speaker": "Karla Alejandra Miranda Vega",
         "day": "25",
         "time": "12:00",
-        "place": "Track 2",
+        "place": "Track 2 - Salón 511",
         "subjects": [],
         "tba": "0"
     },
@@ -447,7 +447,7 @@ var events = [
         "speaker": "Mayra Rodríguez",
         "day": "25",
         "time": "12:30",
-        "place": "Track 1",
+        "place": "Track 1 - Salón 401",
         "subjects": [],
         "tba": "0"
     },
@@ -458,7 +458,7 @@ var events = [
         "speaker": "Wendy Magaly Túnchez Pérez",
         "day": "25",
         "time": "12:30",
-        "place": "Track 2",
+        "place": "Track 2 - Salón 511",
         "subjects": [],
         "tba": "0"
     },
@@ -468,7 +468,7 @@ var events = [
         "speaker": "Sandra Judith Castañeda García",
         "day": "25",
         "time": "12:45",
-        "place": "Track 2",
+        "place": "Track 2 - Salón 511",
         "subjects": [],
         "tba": "0"
     }
@@ -480,7 +480,7 @@ var events = [
         "speaker": "",
         "day": "25",
         "time": "09:00",
-        "place": "Track 1",
+        "place": "Track 1 - Salón 401",
         "subjects": [],
         "tba": "0"
     },
