@@ -31,6 +31,7 @@
 
      if (l.pathname == '/agenda24') hash = '#a24';
      if (l.pathname == '/agenda25') hash = '#a25';
+     if (l.pathname == '/2023') hash = '#a';
 
      l.replace(l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') + repo + '/?' +
               (l.pathname ? 'p=' + l.pathname.replace(/&/g, '~and~').replace(repo, '') : '') +
