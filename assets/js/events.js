@@ -126,7 +126,7 @@ var events = [
 
     {
         "name": "Keynote",
-        "description": "Keynote por parte de la Licenciada Ana Lucía Chan, Secretaria Nacional de Ciencia y Tecnología.",
+        "description": "Keynote por parte de la Licenciada Ana Chan, Secretaria Nacional de Ciencia y Tecnología.",
         "speaker": "Ana Chan",
         "day": "24",
         "time": "11:00",
